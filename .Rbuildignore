@@ -1,0 +1,4 @@
+^renv$
+^renv\.lock$
+^\.github$
+_\.new\.png$
