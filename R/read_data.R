@@ -13,108 +13,218 @@
 # datafiles_log.csv.
 # -----------------------------------------------------------------------------
 
-# Set up connection to Databricks  ------------------------------------------
-con <- dbConnect(databricks(),
-  httpPath = Sys.getenv("DATABRICKS_SQL_WAREHOUSE_ID"),
-  catalog = "catalog_40_copper_he_widening_participation",
-  useNativeQuery = FALSE
-)
-
 
 # Characteristics tabs  -------------------------------------------------------
 
-# Read in the data from the output table in databricks (catalog_40_copper_he_widening_participation.chep_wp.CHEP_yyyy_dash_input_nongeog)
-# Note, the code for this is in the SQL folder (CHEP dashboard data - clean copy creating databricks tables) but should be run in Databricks prior to updating the dashboard
+# Create function for overall chep_nongeog_output
+read_chep_nongeog <- function(databricks = FALSE, published = FALSE) {
+  if (databricks) {
+    con <- dbConnect(databricks(),
+      httpPath = Sys.getenv("DATABRICKS_SQL_WAREHOUSE_ID"),
+      catalog = "catalog_40_copper_he_widening_participation",
+      useNativeQuery = FALSE
+    )
+    chep_nongeog_db_query <- paste0("SELECT * FROM catalog_40_copper_he_widening_participation.chep_wp.CHEP_2026_dash_input_nongeog")
+    chep_nongeog_output <- dbGetQuery(con, chep_nongeog_db_query)
+    chep_nongeog_output$time_period <- as.numeric(chep_nongeog_output$time_period)
+    chep_nongeog_output <- chep_nongeog_output %>% arrange(time_period, characteristic_group, characteristic)
+    # Filter to remove high tariff breakdowns for level of study, mode of study and qualification aim and unknown/unclassified characteristics
+    chep_nongeog_output <- chep_nongeog_output %>%
+      filter(
+        !(tariff_group == "High tariff" & characteristic_group %in% c("Level of Study", "Mode of Study", "Qualification Aim")),
+        !(characteristic == "Unknown" & characteristic_group %in% c("POLAR", "Ethnic Group", "Sex")),
+        !(characteristic == "Unclassified" & characteristic_group == "First Language")
+      ) %>%
+      mutate(time_label = paste0(substr(time_period, 1, 4), "/", substr(time_period, 5, 6)))
+    chep_nongeog_output
+  } else {
+    if (published) {
+      chep_nongeog_output <- read.csv("SQL/chep_2026_dash_input_nongeog.csv")
+      chep_nongeog_output$time_period <- as.numeric(chep_nongeog_output$time_period)
+      chep_nongeog_output <- chep_nongeog_output %>% arrange(time_period, characteristic_group, characteristic)
+      # Filter to remove high tariff breakdowns for level of study, mode of study and qualification aim and unknown/unclassified characteristics
+      chep_nongeog_output <- chep_nongeog_output %>%
+        filter(
+          !(tariff_group == "High tariff" & characteristic_group %in% c("Level of Study", "Mode of Study", "Qualification Aim")),
+          !(characteristic == "Unknown" & characteristic_group %in% c("POLAR", "Ethnic Group", "Sex")),
+          !(characteristic == "Unclassified" & characteristic_group == "First Language")
+        ) %>%
+        mutate(
+          time_label = paste0(substr(time_period, 1, 4), "/", substr(time_period, 5, 6)),
+          entry_rate = as.numeric(entry_rate)
+        )
+      chep_nongeog_output
+    } else {
+      chep_nongeog_output <- read.csv("SQL/chep_2026_dash_input_nongeog_mock.csv")
+      chep_nongeog_output$time_period <- as.numeric(chep_nongeog_output$time_period)
+      chep_nongeog_output <- chep_nongeog_output %>% arrange(time_period, characteristic_group, characteristic)
+      # Filter to remove high tariff breakdowns for level of study, mode of study and qualification aim and unknown/unclassified characteristics
+      chep_nongeog_output <- chep_nongeog_output %>%
+        filter(
+          !(tariff_group == "High tariff" & characteristic_group %in% c("Level of Study", "Mode of Study", "Qualification Aim")),
+          !(characteristic == "Unknown" & characteristic_group %in% c("POLAR", "Ethnic Group", "Sex")),
+          !(characteristic == "Unclassified" & characteristic_group == "First Language")
+        ) %>%
+        mutate(
+          time_label = paste0(substr(time_period, 1, 4), "/", substr(time_period, 5, 6)),
+          entry_rate = as.numeric(entry_rate)
+        )
+      chep_nongeog_output
+    }
+  }
+}
 
-# Lines 30 and 31 should be commented out if using mock data, line 32 should be commented out if using proper data
-# chep_nongeog_db_query <- paste0("SELECT * FROM catalog_40_copper_he_widening_participation.chep_wp.CHEP_2026_dash_input_nongeog")
-# chep_nongeog_output <- dbGetQuery(con, chep_nongeog_db_query)
-chep_nongeog_output <- read.csv("SQL/chep_2026_dash_input_nongeog_mock.csv")
-chep_nongeog_output$time_period <- as.numeric(chep_nongeog_output$time_period)
-chep_nongeog_output <- chep_nongeog_output %>% arrange(time_period, characteristic_group, characteristic)
 
-# Filter to remove high tariff breakdowns for level of study, mode of study and qualification aim and unknown/unclassified characteristics
-chep_nongeog_output <- chep_nongeog_output %>%
-  filter(!(tariff_group == "High tariff" & characteristic_group %in% c("Level of Study", "Mode of Study", "Qualification Aim"))) %>%
-  filter(!(characteristic == "Unknown" & characteristic_group %in% c("POLAR", "Ethnic Group", "Sex"))) %>%
-  filter(!(characteristic == "Unclassified" & characteristic_group == "First Language")) %>%
-  mutate(time_label = paste0(substr(time_period, 1, 4), "/", substr(time_period, 5, 6)))
+# Use chep_nongeog_output to create output for characteristic tab
+create_characteristic_outputs <- function(chep_nongeog_output) {
+  chep_characteristic_output <- chep_nongeog_output %>%
+    filter(
+      !characteristic_group %in%
+        c("Level of Study", "Mode of Study", "Qualification Aim")
+    )
 
+  list(
+    characteristic_output = chep_characteristic_output,
+    characteristic_output_19 =
+      chep_characteristic_output %>%
+        filter(entry_age == "By Age 19"),
+    characteristic_output_25 =
+      chep_characteristic_output %>%
+        filter(entry_age == "By Age 25")
+  )
+}
 
-# filter to characteristic output for tab 1
-chep_characteristic_output <- chep_nongeog_output %>% filter(!characteristic_group %in% c("Level of Study", "Mode of Study", "Qualification Aim"))
+# Use chep_nongeog_output to create output for level of study tab
+create_los_outputs <- function(chep_nongeog_output) {
+  chep_los_output <- chep_nongeog_output %>%
+    filter(characteristic_group == "Level of Study") %>%
+    mutate(
+      characteristic = recode(
+        characteristic,
+        "9. Unknown" = "Unknown"
+      )
+    )
 
-# filter the initial characteristic output into ages to include on separate tabs
-chep_characteristics_output_19 <- chep_characteristic_output %>% filter(entry_age == "By Age 19")
-chep_characteristics_output_25 <- chep_characteristic_output %>% filter(entry_age == "By Age 25")
+  list(
+    los_output = chep_los_output,
+    los_output_19 = chep_los_output %>% filter(entry_age == "By Age 19"),
+    los_output_25 = chep_los_output %>% filter(entry_age == "By Age 25")
+  )
+}
 
-# filter to level of study output for tab
-chep_los_output <- chep_nongeog_output %>%
-  filter(
-    characteristic_group == "Level of Study"
-  ) %>%
-  mutate(characteristic = recode(
-    characteristic,
-    "9. Unknown" = "Unknown"
-  ))
+# Use chep_nongeog_output to create output for mode of study tab
+create_mos_outputs <- function(chep_nongeog_output) {
+  chep_mos_output <- chep_nongeog_output %>%
+    filter(
+      characteristic_group == "Mode of Study"
+    )
 
-# filter the initial characteristic output into ages to include on separate tabs
-chep_los_output_19 <- chep_los_output %>% filter(entry_age == "By Age 19")
-chep_los_output_25 <- chep_los_output %>% filter(entry_age == "By Age 25")
+  list(
+    mos_output = chep_mos_output,
+    mos_output_19 = chep_mos_output %>%
+      filter(entry_age == "By Age 19"),
+    mos_output_25 = chep_mos_output %>%
+      filter(entry_age == "By Age 25")
+  )
+}
 
-# filter to mode of study output for tab3
-chep_mos_output <- chep_nongeog_output %>% filter(
-  characteristic_group == "Mode of Study"
-)
+# Use chep_nongeog_output to create output for qualification aim tab
+create_qaim_outputs <- function(chep_nongeog_output) {
+  chep_qaim_output <- chep_nongeog_output %>%
+    filter(
+      characteristic_group == "Qualification Aim"
+    ) %>%
+    mutate(
+      characteristic = recode(
+        characteristic,
+        "0. Apprenticeship" = "Apprenticeship",
+        "1. Postgraduate Research" = "Postgraduate Research",
+        "2. Postgraduate Taught" = "Postgraduate Taught",
+        "3. First Degree" = "First Degree",
+        "4. Foundation Degree" = "Foundation Degree",
+        "5. HNC/HND" = "HNC/HND",
+        "6. Other Undergraduate Qualifications" = "Other Undergraduate Qualifications"
+      )
+    )
 
-# filter the initial characteristic output into ages to include on separate tabs
-chep_mos_output_19 <- chep_mos_output %>% filter(entry_age == "By Age 19")
-chep_mos_output_25 <- chep_mos_output %>% filter(entry_age == "By Age 25")
-
-# filter to qualification aim output for tab4
-chep_qaim_output <- chep_nongeog_output %>%
-  filter(
-    characteristic_group == "Qualification Aim"
-  ) %>%
-  mutate(characteristic = recode(
-    characteristic,
-    "0. Apprenticeship" = "Apprenticeship",
-    "1. Postgraduate Research" = "Postgraduate Research",
-    "2. Postgraduate Taught" = "Postgraduate Taught",
-    "3. First Degree" = "First Degree",
-    "4. Foundation Degree" = "Foundation Degree",
-    "5. HNC/HND" = "HNC/HND",
-    "6. Other Undergraduate Qualifications" = "Other Undergraduate Qualifications"
-  ))
-
-# filter the initial characteristic output into ages to include on separate tabs
-chep_qaim_output_19 <- chep_qaim_output %>% filter(entry_age == "By Age 19")
-chep_qaim_output_25 <- chep_qaim_output %>% filter(entry_age == "By Age 25")
+  list(
+    qaim_output = chep_qaim_output,
+    qaim_output_19 = chep_qaim_output %>%
+      filter(entry_age == "By Age 19"),
+    qaim_output_25 = chep_qaim_output %>%
+      filter(entry_age == "By Age 25")
+  )
+}
 
 
 # Geographic tab  -------------------------------------------------------------
 
-# Read in the data from the output table in databricks (catalog_40_copper_he_widening_participation.chep_wp.CHEP_yyyy_dash_input_geog)
-# Note, the code for this is in the SQL folder (CHEP dashboard data - clean copy creating databricks tables) but should be run in Databricks prior to updating the dashboard
+# Create function for overall chep_geog_output
+read_chep_geog <- function(databricks = FALSE, published = FALSE) {
+  if (databricks) {
+    con <- dbConnect(databricks(),
+      httpPath = Sys.getenv("DATABRICKS_SQL_WAREHOUSE_ID"),
+      catalog = "catalog_40_copper_he_widening_participation",
+      useNativeQuery = FALSE
+    )
+    chep_geog_db_query <- paste0("SELECT * FROM catalog_40_copper_he_widening_participation.chep_wp.CHEP_2026_dash_input_geog")
+    chep_geog_output <- dbGetQuery(con, chep_geog_db_query)
+    chep_geog_output$time_period <- as.numeric(chep_geog_output$time_period)
+    chep_geog_output <- chep_geog_output %>%
+      arrange(time_period, characteristic_group, characteristic) %>%
+      mutate(
+        new_la_code = gsub("\\s+", "", new_la_code), # RESOLVES ANY WHITESPACE ISSUES
+        entry_rate = as.numeric(entry_rate)
+      ) %>%
+      mutate(characteristic = recode(
+        characteristic,
+        "All Other Pupils" = "Non-FSM",
+        "Free School Meals" = "FSM"
+      ))
+    chep_geog_output
+  } else {
+    if (published) {
+      chep_geog_output <- read.csv("SQL/chep_2026_dash_input_geog.csv")
+      chep_geog_output$time_period <- as.numeric(chep_geog_output$time_period)
+      chep_geog_output <- chep_geog_output %>%
+        arrange(time_period, characteristic_group, characteristic) %>%
+        mutate(
+          new_la_code = gsub("\\s+", "", new_la_code), # RESOLVES ANY WHITESPACE ISSUES
+          entry_rate = as.numeric(entry_rate)
+        ) %>%
+        mutate(characteristic = recode(
+          characteristic,
+          "All Other Pupils" = "Non-FSM",
+          "Free School Meals" = "FSM"
+        ))
+      chep_geog_output
+    } else {
+      chep_geog_output <- read.csv("SQL/chep_2026_dash_input_geog_mock.csv")
+      chep_geog_output$time_period <- as.numeric(chep_geog_output$time_period)
+      chep_geog_output <- chep_geog_output %>%
+        arrange(time_period, characteristic_group, characteristic) %>%
+        mutate(
+          new_la_code = gsub("\\s+", "", new_la_code), # RESOLVES ANY WHITESPACE ISSUES
+          entry_rate = as.numeric(entry_rate)
+        ) %>%
+        mutate(characteristic = recode(
+          characteristic,
+          "All Other Pupils" = "Non-FSM",
+          "Free School Meals" = "FSM"
+        ))
+      chep_geog_output
+    }
+  }
+}
 
-# Lines 101 and 102 should be commented out if using mock data, line 103 should be commented out if using proper data
-# chep_geog_query <- paste0("SELECT * FROM catalog_40_copper_he_widening_participation.chep_wp.CHEP_2026_dash_input_geog")
-# chep_geog_output <- dbGetQuery(con, chep_geog_query)
-chep_geog_output <- read.csv("SQL/chep_2026_dash_input_geog_mock.csv")
-chep_geog_output$time_period <- as.numeric(chep_geog_output$time_period)
-chep_geog_output <- chep_geog_output %>%
-  arrange(time_period, characteristic_group, characteristic) %>%
-  mutate(new_la_code = gsub("\\s+", "", new_la_code)) %>% # RESOLVES ANY WHITESPACE ISSUES
-  mutate(characteristic = recode(
-    characteristic,
-    "All Other Pupils" = "Non-FSM",
-    "Free School Meals" = "FSM"
-  ))
-
-
-# filter the initial geographic output into ages to include on separate tabs
-chep_geographic_output_19 <- chep_geog_output %>% filter(entry_age == "By Age 19")
-chep_geographic_output_25 <- chep_geog_output %>% filter(entry_age == "By Age 25")
+# Use chep_geog_output to create outputs for geographic tabs
+create_geog_outputs <- function(chep_geog_output) {
+  list(
+    geog_output = chep_geog_output,
+    geog_output_19 = chep_geog_output %>% filter(entry_age == "By Age 19"),
+    geog_output_25 = chep_geog_output %>% filter(entry_age == "By Age 25")
+  )
+}
 
 # Read in mapshape data -------------------------------------------------------
 

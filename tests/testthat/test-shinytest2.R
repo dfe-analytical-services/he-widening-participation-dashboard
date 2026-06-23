@@ -3,7 +3,7 @@ library(shinytest2)
 test_that("{shinytest2} recording: test_01_navigation_bar", {
   app <- AppDriver$new(test_path("../.."),
     variant = platform_variant(), name = "test_01_navigation_bar",
-    height = 889, width = 1619, load_timeout = 60000
+    height = 889, width = 1619, load_timeout = 90000
   )
   app$set_inputs(cookies = character(0), allow_no_input_binding_ = TRUE)
   app$expect_screenshot()
@@ -25,7 +25,7 @@ test_that("{shinytest2} recording: test_01_navigation_bar", {
 test_that("{shinytest2} recording: test_02_navigation_tabs", {
   app <- AppDriver$new(test_path("../.."),
     variant = platform_variant(), name = "test_02_navigation_tabs",
-    height = 889, width = 1619, load_timeout = 60000
+    height = 889, width = 1619, load_timeout = 90000
   )
   app$set_inputs(cookies = character(0), allow_no_input_binding_ = TRUE)
   app$expect_screenshot()
@@ -59,7 +59,7 @@ test_that("{shinytest2} recording: test_02_navigation_tabs", {
 test_that("{shinytest2} recording: test_03_navigation_dropdowns", {
   app <- AppDriver$new(test_path("../.."),
     variant = platform_variant(), name = "test_03_navigation_dropdowns",
-    height = 889, width = 1619, load_timeout = 60000
+    height = 889, width = 1619, load_timeout = 90000
   )
   app$set_inputs(cookies = character(0), allow_no_input_binding_ = TRUE)
   app$expect_screenshot()

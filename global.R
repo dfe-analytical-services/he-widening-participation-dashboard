@@ -78,6 +78,42 @@ if (FALSE) {
 # Source script for loading in data
 source("R/read_data.R")
 
+# LINES 83 AND 84 MUST BE UPDATED
+# databricks = TRUE for private app only, published = TRUE for public app on publication, leave read_chep_nongeog() empty when using dummy data
+chep_nongeog_output <- read_chep_nongeog()
+chep_geog_output <- read_chep_geog()
+
+char_outputs <- create_characteristic_outputs(chep_nongeog_output)
+los_outputs <- create_los_outputs(chep_nongeog_output)
+mos_outputs <- create_mos_outputs(chep_nongeog_output)
+qaim_outputs <- create_qaim_outputs(chep_nongeog_output)
+geog_outputs <- create_geog_outputs(chep_geog_output)
+
+# Characteristics
+chep_characteristic_output <- char_outputs$characteristic_output
+chep_characteristics_output_19 <- char_outputs$characteristic_output_19
+chep_characteristics_output_25 <- char_outputs$characteristic_output_25
+
+# Level of study
+chep_los_output <- los_outputs$los_output
+chep_los_output_19 <- los_outputs$los_output_19
+chep_los_output_25 <- los_outputs$los_output_25
+
+# Mode of study
+chep_mos_output <- mos_outputs$mos_output
+chep_mos_output_19 <- mos_outputs$mos_output_19
+chep_mos_output_25 <- mos_outputs$mos_output_25
+
+# Qualification aim
+chep_qaim_output <- qaim_outputs$qaim_output
+chep_qaim_output_19 <- qaim_outputs$qaim_output_19
+chep_qaim_output_25 <- qaim_outputs$qaim_output_25
+
+# Geographic breakdown
+chep_geog_output <- geog_outputs$geog_output
+chep_geographic_output_19 <- geog_outputs$geog_output_19
+chep_geographic_output_25 <- geog_outputs$geog_output_25
+
 # Source custom functions script
 source("R/helper_functions.R")
 
