@@ -135,7 +135,7 @@ site_primary <- "https://department-for-education.shinyapps.io/he-widening-parti
 sites_list <- c(site_primary)
 
 # Set the key for Google Analytics tracking
-google_analytics_key <- "Z967JJVQQX" # We will need to get a proper google analytics key for the production dashboard, this is a placeholder from the template
+google_analytics_key <- "G1TPL1NXSD" # We will need to get a proper google analytics key for the production dashboard, this is a placeholder from the template
 
 # End of global variables -----------------------------------------------------
 
