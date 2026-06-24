@@ -1,12 +1,10 @@
 #!/usr/bin/env Rscript
 cat("Running commit hooks...", fill = TRUE)
 shhh <- suppressPackageStartupMessages # It's a library, so shhh!
-shhh(library(dplyr))
-shhh(library(xfun))
-shhh(library(dfeshiny))
-
 message("\n")
-
+renv::restore()
+library(dfeshiny)
+library(dplyr)
 message("1. Checking for unpublished data...\n")
 
 error_flag <- FALSE
