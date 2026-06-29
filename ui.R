@@ -116,7 +116,7 @@ ui <- function(input, output, session) {
         "Support and feedback",
         support_panel(
           team_email = "he.statistics@education.gov.uk",
-          repo_name = "https://dfe-gov-uk.visualstudio.com/official-statistics-production/_git/wp_chep_dashboard",
+          repo_name = "https://github.com/dfe-analytical-services/he-widening-participation-dashboard",
           form_url = "https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-U4ie_t5E21MlsudeT67Fb5UQTQyUkw3UlQyOUlaMzdUSFpRMzYwNjRGWC4u",
           publication_slug = "widening-participation-in-higher-education"
         )
