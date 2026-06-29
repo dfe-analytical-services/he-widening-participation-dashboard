@@ -733,336 +733,170 @@ time_period,time_identifier,geographic_level,country_code,country_name,entry_age
 202021,Academic year,National,E92000001,England,By Age 19,Free School Meals,Free School Meals,Total,20
 200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-200405,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-200405,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-200506,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-200506,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-200607,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-200607,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-200708,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-200708,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-200809,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-200809,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-200910,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-200910,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-201011,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-201011,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-201112,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-201112,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-201213,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-201213,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-201314,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-201314,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
 201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,Total,10
-201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
-201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Unknown,High tariff,10
 201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
 201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,Total,20
-201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
-201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 4,High tariff,20
 201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
 201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,Total,30
-201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
-201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 5,High tariff,30
 201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
 201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,Total,40
-201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
-201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 6,High tariff,40
 201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
 201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,Total,50
-201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
-201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 7,High tariff,50
 201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
 201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,Total,60
-201415,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
-201415,Academic year,National,E92000001,England,By Age 25,Level of Study,Level 8,High tariff,60
 201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
-201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
 201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
-201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
 201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
-201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
 201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
-201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
 201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
-201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
 201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
-201516,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
 201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
-201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
 201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
-201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
 201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
-201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
 201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
-201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
 201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
-201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
 201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
-201617,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
 201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
-201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
 201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
-201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
 201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
-201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
 201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
-201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
 201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
-201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
 201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
-201718,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
 201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
-201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
 201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
-201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
 201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
-201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
 201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
-201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
 201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
-201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
 201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,Total,60
-201819,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 8,High tariff,60
 201920,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
-201920,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
 201920,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
-201920,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
 201920,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
-201920,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
 201920,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
-201920,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
 201920,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
-201920,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
 202021,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,Total,10
-202021,Academic year,National,E92000001,England,By Age 19,Level of Study,Unknown,High tariff,10
 202021,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,Total,20
-202021,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 4,High tariff,20
 202021,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,Total,30
-202021,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 5,High tariff,30
 202021,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,Total,40
-202021,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 6,High tariff,40
 202021,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,Total,50
-202021,Academic year,National,E92000001,England,By Age 19,Level of Study,Level 7,High tariff,50
 200506,Academic year,National,E92000001,England,By Age 19,Looked After Children,All Other Pupils,High tariff,10
 200506,Academic year,National,E92000001,England,By Age 25,Looked After Children,All Other Pupils,High tariff,10
 200506,Academic year,National,E92000001,England,By Age 19,Looked After Children,All Other Pupils,Total,10
@@ -1169,208 +1003,106 @@ time_period,time_identifier,geographic_level,country_code,country_name,entry_age
 202021,Academic year,National,E92000001,England,By Age 19,Looked After Children,Looked after continuously for 12 months or more,Total,20
 200102,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 200102,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-200102,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-200102,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 200102,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 200102,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-200102,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-200102,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 200102,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 200102,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-200102,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-200102,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 200203,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 200203,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-200203,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-200203,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 200203,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 200203,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-200203,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-200203,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 200203,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 200203,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-200203,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-200203,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 200304,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 200304,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-200304,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-200304,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 200304,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 200304,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-200304,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-200304,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 200304,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 200304,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-200304,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-200304,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 200405,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 200405,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-200405,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-200405,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 200405,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 200405,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-200405,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-200405,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 200405,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 200405,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-200405,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-200405,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 200506,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 200506,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-200506,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-200506,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 200506,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 200506,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-200506,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-200506,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 200506,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 200506,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-200506,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-200506,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 200607,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 200607,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-200607,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-200607,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 200607,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 200607,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-200607,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-200607,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 200607,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 200607,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-200607,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-200607,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 200708,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 200708,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-200708,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-200708,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 200708,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 200708,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-200708,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-200708,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 200708,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 200708,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-200708,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-200708,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 200809,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 200809,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-200809,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-200809,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 200809,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 200809,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-200809,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-200809,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 200809,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 200809,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-200809,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-200809,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 200910,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 200910,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-200910,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-200910,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 200910,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 200910,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-200910,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-200910,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 200910,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 200910,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-200910,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-200910,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 201011,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 201011,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-201011,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-201011,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 201011,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 201011,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-201011,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-201011,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 201011,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 201011,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-201011,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-201011,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 201112,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 201112,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-201112,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-201112,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 201112,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 201112,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-201112,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-201112,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 201112,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 201112,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-201112,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-201112,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 201213,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 201213,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-201213,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-201213,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 201213,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 201213,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-201213,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-201213,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 201213,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 201213,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-201213,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-201213,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 201314,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 201314,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-201314,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-201314,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 201314,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 201314,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-201314,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-201314,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 201314,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 201314,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-201314,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-201314,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 201415,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
 201415,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,Total,10
-201415,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
-201415,Academic year,National,E92000001,England,By Age 25,Mode of Study,Apprenticeship,High tariff,10
 201415,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
 201415,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,Total,20
-201415,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
-201415,Academic year,National,E92000001,England,By Age 25,Mode of Study,Full-time,High tariff,20
 201415,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
 201415,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,Total,30
-201415,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
-201415,Academic year,National,E92000001,England,By Age 25,Mode of Study,Part-time,High tariff,30
 201516,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
-201516,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
 201516,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
-201516,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
 201516,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
-201516,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
 201617,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
-201617,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
 201617,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
-201617,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
 201617,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
-201617,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
 201718,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
-201718,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
 201718,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
-201718,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
 201718,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
-201718,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
 201819,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
-201819,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
 201819,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
-201819,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
 201819,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
-201819,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
 201920,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
-201920,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
 201920,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
-201920,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
 201920,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
-201920,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
 202021,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,Total,10
-202021,Academic year,National,E92000001,England,By Age 19,Mode of Study,Apprenticeship,High tariff,10
 202021,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,Total,20
-202021,Academic year,National,E92000001,England,By Age 19,Mode of Study,Full-time,High tariff,20
 202021,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,Total,30
-202021,Academic year,National,E92000001,England,By Age 19,Mode of Study,Part-time,High tariff,30
 200506,Academic year,National,E92000001,England,By Age 19,POLAR,Q1 - Most Disadvantaged,High tariff,10
 200506,Academic year,National,E92000001,England,By Age 25,POLAR,Q1 - Most Disadvantaged,High tariff,10
 200506,Academic year,National,E92000001,England,By Age 19,POLAR,Q1 - Most Disadvantaged,Total,10
@@ -1633,478 +1365,241 @@ time_period,time_identifier,geographic_level,country_code,country_name,entry_age
 202021,Academic year,National,E92000001,England,By Age 19,POLAR,Q5 - Most Advantaged,Total,50
 200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-200102,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-200102,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-200203,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-200203,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-200304,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-200304,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-200405,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-200405,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-200506,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-200506,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-200607,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-200607,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-200708,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-200708,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-200809,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-200809,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-200910,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-200910,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-201011,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-201011,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-201112,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-201112,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-201213,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-201213,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-201314,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-201314,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
 201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,Total,10
-201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
-201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Apprenticeship,High tariff,10
 201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
 201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,Total,20
-201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
-201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Research,High tariff,20
 201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
 201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,Total,30
-201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
-201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Postgraduate Taught,High tariff,30
 201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
 201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,Total,40
-201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
-201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,First Degree,High tariff,40
 201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
 201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,Total,50
-201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
-201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Foundation Degree,High tariff,50
 201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
 201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,Total,60
-201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
-201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,HNC/HND,High tariff,60
 201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
 201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,Total,70
-201415,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
-201415,Academic year,National,E92000001,England,By Age 25,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
-201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
 201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
-201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
 201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
-201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
 201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
-201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
 201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
-201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
 201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
-201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
 201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
-201516,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
-201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
 201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
-201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
 201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
-201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
 201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
-201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
 201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
-201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
 201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
-201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
 201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
-201617,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
-201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
 201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
-201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
 201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
-201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
 201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
-201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
 201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
-201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
 201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
-201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
 201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
-201718,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
-201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
 201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
-201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
 201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
-201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
 201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
-201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
 201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
-201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
 201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
-201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
 201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
-201819,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
-201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
 201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,Total,20
-201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Research,High tariff,20
 201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
-201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
 201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
-201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
 201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
-201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
 201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
-201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
 201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
-201920,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,Total,10
-202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Apprenticeship,High tariff,10
 202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,Total,30
-202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Postgraduate Taught,High tariff,30
 202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,Total,40
-202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,First Degree,High tariff,40
 202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,Total,50
-202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Foundation Degree,High tariff,50
 202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,Total,60
-202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,HNC/HND,High tariff,60
 202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,Total,70
-202021,Academic year,National,E92000001,England,By Age 19,Qualification Aim,Other Undergraduate Qualifications,High tariff,70
 200607,Academic year,National,E92000001,England,By Age 25,School Type,Independent,High tariff,10
 200607,Academic year,National,E92000001,England,By Age 19,School Type,Independent,High tariff,10
 200607,Academic year,National,E92000001,England,By Age 25,School Type,Independent,Total,10
