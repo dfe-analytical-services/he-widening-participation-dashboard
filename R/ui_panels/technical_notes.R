@@ -1,7 +1,8 @@
 # technical notes panel
 tech_notes_panel <- function() {
   tabPanel(
-    "Technical notes",
+    title = "Technical notes",
+    value = "technical_notes",
     gov_main_layout(
       gov_row(
         column(
@@ -22,8 +23,9 @@ tech_notes_panel <- function() {
           p(
             "Full information on methodologies and further technical notes are available through",
             a(
-              href = "https://explore-education-statistics.service.gov.uk/find-statistics/widening-participation-in-higher-education/2023-24",
-              "Explore Education Statistics.",
+              href = "https://explore-education-statistics.service.gov.uk/methodology/widening-participation-in-higher-education",
+              target = "_blank",
+              "Explore Education Statistics (opens in new tab)",
               .noWS = c("after")
             ),
             "."

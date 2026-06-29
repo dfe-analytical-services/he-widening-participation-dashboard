@@ -178,6 +178,9 @@ entry_by_19_panel <- function() {
                 A pupil may return to HE level study in a future academic year and participate in
                 a different qualification aim, level or mode of study compared to their original
                 qualification."),
+              p("2. Only the years relating to the 15-year-old cohorts from 2004/05 onwards, for
+                which we have complete and consistent breakdowns, have been published.
+                See the methodology note for more information."),
               details(
                 inputId = "los_ts_19_tbl",
                 label = "View chart as table",
@@ -220,6 +223,7 @@ entry_by_19_panel <- function() {
                 A pupil may return to HE level study in a future academic year and participate in
                 a different qualification aim, level or mode of study compared to their original
                 qualification."),
+              p("2. Figures for apprenticeships are presented separately."),
               details(
                 inputId = "qaim_ts_19_tbl",
                 label = "View chart as table",
@@ -262,6 +266,7 @@ entry_by_19_panel <- function() {
                 A pupil may return to HE level study in a future academic year and participate in
                 a different qualification aim, level or mode of study compared to their original
                 qualification."),
+              p("2. Figures for apprenticeships are presented separately."),
               details(
                 inputId = "mos_ts_19_tbl",
                 label = "View chart as table",

@@ -146,6 +146,7 @@ characteristic_title <- function(output, output_name, char_group_react, tariff_r
     status_groups <- c("Care Leavers", "Children in Need", "Disadvantage", "Looked After Children")
     eligibility_groups <- c("Free School Meals")
     quintile_groups <- c("POLAR")
+    school_type_groups <- c("School Type")
 
     suffix <- if (char_group %in% status_groups) {
       " status"
@@ -153,6 +154,8 @@ characteristic_title <- function(output, output_name, char_group_react, tariff_r
       " eligibility"
     } else if (char_group %in% quintile_groups) {
       " quintile"
+    } else if (char_group %in% school_type_groups) {
+      " (A level students)"
     } else {
       ""
     }
@@ -223,15 +226,28 @@ characteristic_plot <- function(reactive_input, output, output_name, colors_list
   })
 }
 
+
+
+
+
+
 # Bar chart - used for tabs based on HESA derived characteristics
 characteristic_bars <- function(reactive_input, output, output_name, colors_list) {
   output[[output_name]] <- renderPlotly({
-    df <- reactive_input() %>%
-      group_by(time_period) %>%
-      arrange(desc(entry_rate), .by_group = TRUE) %>%
-      mutate(characteristic = factor(characteristic, levels = unique(characteristic)))
+    df <- reactive_input()
 
     df$time_period <- as.character(df$time_period)
+
+    df_ordered <- df %>%
+      group_by(characteristic) %>%
+      summarise(latest_value = entry_rate[time_period == max(time_period)]) %>%
+      arrange(desc(latest_value))
+
+    ordered_levels <- df_ordered$characteristic
+
+    df <- df %>%
+      mutate(characteristic = factor(characteristic, levels = ordered_levels)) %>%
+      group_by(time_period)
 
     p <- plot_ly(
       df,
@@ -265,7 +281,15 @@ characteristic_table <- function(reactive_input, output, output_name) {
       select(`Year aged 15`, characteristic, entry_rate) %>%
       mutate(entry_rate = round(entry_rate, digits = 1)) %>%
       pivot_wider(names_from = characteristic, values_from = entry_rate) %>%
-      arrange(desc(`Year aged 15`))
+      select(
+        `Year aged 15`,
+        sort(setdiff(
+          names(.),
+          c("Year aged 15", "All Other Pupils")
+        )),
+        any_of("All Other Pupils")
+      ) %>%
+      arrange(`Year aged 15`)
 
     num_cols <- names(df)[sapply(df, is.numeric)]
     num_cols <- setdiff(num_cols, "Year aged 15")
