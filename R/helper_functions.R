@@ -247,9 +247,7 @@ characteristic_bars <- function(reactive_input, output, output_name, colors_list
 
     df <- df %>%
       mutate(characteristic = factor(characteristic, levels = ordered_levels)) %>%
-      group_by(time_period) %>%
-      arrange(desc(entry_rate), .by_group = TRUE) %>%
-      mutate(characteristic = factor(characteristic, levels = unique(characteristic)))
+      group_by(time_period)
 
     p <- plot_ly(
       df,
