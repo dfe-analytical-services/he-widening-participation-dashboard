@@ -11,17 +11,20 @@ user_guide_panel <- function() {
             "This dashboard accompanies the ",
             a(
               href = "https://explore-education-statistics.service.gov.uk/find-statistics/widening-participation-in-higher-education/",
-              "Widening Participation (WP)"
+              target = "_blank",
+              "Widening Participation (WP) (opens in new tab)"
             ),
             "statistics release on Explore Education Statistics. This is the first release in the Department for Education’s ",
             a(
               href = "https://explore-education-statistics.service.gov.uk/find-statistics/widening-participation-in-higher-education/",
-              "WP"
+              target = "_blank",
+              "WP (opens in new tab)"
             ),
             " series to incorporate statistics formerly published in the ",
             a(
               href = "https://explore-education-statistics.service.gov.uk/find-statistics/participation-measures-in-higher-education/",
-              "Participation Measures in Higher Education (CHEP)"
+              target = "_blank",
+              "Participation Measures in Higher Education (CHEP) (opens in new tab)"
             ),
             " series."
           ),
@@ -29,12 +32,14 @@ user_guide_panel <- function() {
             "The historic ",
             a(
               href = "https://explore-education-statistics.service.gov.uk/find-statistics/widening-participation-in-higher-education/",
-              "WP"
+              target = "_blank",
+              "WP (opens in new tab)"
             ),
             " and ",
             a(
               href = "https://explore-education-statistics.service.gov.uk/find-statistics/participation-measures-in-higher-education/",
-              "CHEP"
+              target = "_blank",
+              "CHEP (opens in new tab)"
             ),
             " statistics releases both measured higher education participation by various breakdowns and characteristics,
             tracking proportions of cohorts entering higher education (HE) by a given age. This is
@@ -48,7 +53,8 @@ user_guide_panel <- function() {
             is available on",
             a(
               href = "https://explore-education-statistics.service.gov.uk/find-statistics/widening-participation-in-higher-education/",
-              "Explore Education Statistics."
+              target = "_blank",
+              "Explore Education Statistics (opens in new tab)."
             ),
             " As in the previous WP and CHEP
             publications, data in this dashboard relates to pupils studying in English state-funded and special schools
@@ -72,17 +78,21 @@ user_guide_panel <- function() {
             tags$li("Mode of study – includes a chart and table showing participation rate in HE by the age selected,
            broken down by mode of study.")
           ),
-          p("Tables throughout the dashboard can be sorted by clicking on the column headings. Hovering above charts will display labels,
-            and you can zoom into sections of charts by clicking and dragging over an area of interst. It is also possible to look at one series
-            in a chart in isolation by clicking the series in the legend."),
+          p("Where no data is presented, this indicates that there is no current record of HE participation in that category for the cohort of 15-year-olds.
+            Tables throughout the dashboard can be sorted by clicking on the column headings. Hovering above charts will display labels,
+            and you can zoom into sections of charts by clicking and dragging over an area of interest. It is also possible to focus on
+            one or several series presented in the chart by clicking the series in the legend."),
           h2("Guidance sources"),
           p(
-            "Full information on methodology and further technical notes are available in the ",
+            "Technical notes and definitions are available in the ",
+            actionLink("link_to_tech_notes_tab", "technical notes"),
+            " tab and full details of the methodology are available on ",
             a(
-              href = "https://explore-education-statistics.service.gov.uk/find-statistics/widening-participation-in-higher-education/",
-              "WP"
+              href = "https://explore-education-statistics.service.gov.uk/methodology/widening-participation-in-higher-education",
+              target = "_blank",
+              "Explore Education Statistics (opens in new tab)."
             ),
-            " statistics release page on Explore Education Statistics. If you have questions about the dashboard or data within it, please
+            "If you have questions about the dashboard or data within it, please
             contact us at",
             a(
               href = "mailto:he.statistics@education.gov.uk",

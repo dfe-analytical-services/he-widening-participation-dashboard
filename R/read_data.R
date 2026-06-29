@@ -28,13 +28,7 @@ read_chep_nongeog <- function(databricks = FALSE, published = FALSE) {
     chep_nongeog_output <- dbGetQuery(con, chep_nongeog_db_query)
     chep_nongeog_output$time_period <- as.numeric(chep_nongeog_output$time_period)
     chep_nongeog_output <- chep_nongeog_output %>% arrange(time_period, characteristic_group, characteristic)
-    # Filter to remove high tariff breakdowns for level of study, mode of study and qualification aim and unknown/unclassified characteristics
     chep_nongeog_output <- chep_nongeog_output %>%
-      filter(
-        !(tariff_group == "High tariff" & characteristic_group %in% c("Level of Study", "Mode of Study", "Qualification Aim")),
-        !(characteristic == "Unknown" & characteristic_group %in% c("POLAR", "Ethnic Group", "Sex")),
-        !(characteristic == "Unclassified" & characteristic_group == "First Language")
-      ) %>%
       mutate(time_label = paste0(substr(time_period, 1, 4), "/", substr(time_period, 5, 6)))
     chep_nongeog_output
   } else {
@@ -42,13 +36,7 @@ read_chep_nongeog <- function(databricks = FALSE, published = FALSE) {
       chep_nongeog_output <- read.csv("SQL/chep_2026_dash_input_nongeog.csv")
       chep_nongeog_output$time_period <- as.numeric(chep_nongeog_output$time_period)
       chep_nongeog_output <- chep_nongeog_output %>% arrange(time_period, characteristic_group, characteristic)
-      # Filter to remove high tariff breakdowns for level of study, mode of study and qualification aim and unknown/unclassified characteristics
       chep_nongeog_output <- chep_nongeog_output %>%
-        filter(
-          !(tariff_group == "High tariff" & characteristic_group %in% c("Level of Study", "Mode of Study", "Qualification Aim")),
-          !(characteristic == "Unknown" & characteristic_group %in% c("POLAR", "Ethnic Group", "Sex")),
-          !(characteristic == "Unclassified" & characteristic_group == "First Language")
-        ) %>%
         mutate(
           time_label = paste0(substr(time_period, 1, 4), "/", substr(time_period, 5, 6)),
           entry_rate = as.numeric(entry_rate)
@@ -58,13 +46,7 @@ read_chep_nongeog <- function(databricks = FALSE, published = FALSE) {
       chep_nongeog_output <- read.csv("SQL/chep_2026_dash_input_nongeog_mock.csv")
       chep_nongeog_output$time_period <- as.numeric(chep_nongeog_output$time_period)
       chep_nongeog_output <- chep_nongeog_output %>% arrange(time_period, characteristic_group, characteristic)
-      # Filter to remove high tariff breakdowns for level of study, mode of study and qualification aim and unknown/unclassified characteristics
       chep_nongeog_output <- chep_nongeog_output %>%
-        filter(
-          !(tariff_group == "High tariff" & characteristic_group %in% c("Level of Study", "Mode of Study", "Qualification Aim")),
-          !(characteristic == "Unknown" & characteristic_group %in% c("POLAR", "Ethnic Group", "Sex")),
-          !(characteristic == "Unclassified" & characteristic_group == "First Language")
-        ) %>%
         mutate(
           time_label = paste0(substr(time_period, 1, 4), "/", substr(time_period, 5, 6)),
           entry_rate = as.numeric(entry_rate)

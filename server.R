@@ -200,7 +200,7 @@ server <- function(input, output, session) {
   mos_colors <- c(
     "Full-time" = "#12436D",
     "Part-time" = "#F46A25",
-    "Apprenticeship" = "#28A197"
+    "Apprenticeship" = "#BFBFBF"
   )
 
   # Use characteristic_plot function from helper functions to create charts
@@ -362,6 +362,10 @@ server <- function(input, output, session) {
   # Link in the user guide panel to the feedback panel ------------------------
   observeEvent(input$link_to_feedback_tab, {
     updateTabsetPanel(session, "navlistPanel", selected = "support_panel_ui")
+  })
+
+  observeEvent(input$link_to_tech_notes_tab, {
+    updateTabsetPanel(session, "navlistPanel", selected = "technical_notes")
   })
 
   # footer links --------------------------------------------------------------
