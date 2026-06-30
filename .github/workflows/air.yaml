@@ -1,0 +1,15 @@
+on:
+  push:
+    branches: [main]
+  pull_request_target:
+
+name: air
+
+permissions:
+  contents: read
+  packages: read
+  pull-requests: write
+
+jobs:
+  format-check:
+    uses: dfe-analytical-services/dfeshiny/.github/workflows/air_reusable.yaml@main
