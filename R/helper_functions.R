@@ -168,13 +168,14 @@ characteristic_title <- function(output, output_name, char_group_react, tariff_r
       ""
     }
 
-    HTML(
+    heading_text(
       paste0(
-        "<h2>Participation rates in", tariff_txt,
+        "Participation rates in", tariff_txt,
         " higher education by age ", age,
-        breakdown_txt,
-        "</h2>"
-      )
+        breakdown_txt
+      ),
+      size = "m",
+      level = 2
     )
   })
 }
@@ -343,13 +344,14 @@ geographic_title <- function(output, output_name, char_react, tariff_react, age)
       ""
     }
 
-    HTML(
+    heading_text(
       paste0(
-        "<h2>Participation rates in", tariff_txt,
+        "Participation rates in", tariff_txt,
         " higher education by age ", age,
-        breakdown_txt,
-        "</h2>"
-      )
+        breakdown_txt
+      ),
+      size = "m",
+      level = 2
     )
   })
 }
