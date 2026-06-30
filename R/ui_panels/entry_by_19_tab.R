@@ -6,7 +6,7 @@ entry_by_19_panel <- function() {
         column(
           width = 12,
           id = "main_col",
-          h1("Widening Participation dashboard"),
+          heading_text("Widening Participation dashboard", size = "l", level = 1),
         ),
         # Tabset for individual tabs ------------------------------------------
         column(
@@ -166,7 +166,7 @@ entry_by_19_panel <- function() {
                   )
                 )
               ),
-              h2("Participation rates in higher education by age 19 broken down by level of study"),
+              heading_text("Participation rates in higher education by age 19 broken down by level of study", size = "m", level = 2),
               bslib::layout_columns(
                 div(
                   style = "display: flex; flex-direction: column; gap: 1rem;",
@@ -211,7 +211,7 @@ entry_by_19_panel <- function() {
                   )
                 )
               ),
-              h2("Participation rates in higher education by age 19 broken down by qualification aim"),
+              heading_text("Participation rates in higher education by age 19 broken down by qualification aim", size = "m", level = 2),
               bslib::layout_columns(
                 div(
                   style = "display: flex; flex-direction: column; gap: 1rem;",
@@ -254,7 +254,7 @@ entry_by_19_panel <- function() {
                   )
                 )
               ),
-              h2("Participation rates in higher education by age 19 broken down by mode of study"),
+              heading_text("Participation rates in higher education by age 19 broken down by mode of study", size = "m", level = 2),
               bslib::layout_columns(
                 div(
                   style = "display: flex; flex-direction: column; gap: 1rem;",

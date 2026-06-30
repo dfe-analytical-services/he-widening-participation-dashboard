@@ -8,7 +8,7 @@ tech_notes_panel <- function() {
         column(
           width = 12,
           id = "main_col",
-          h1("Technical notes"),
+          heading_text("Technical notes", size = "l", level = 1),
         ),
         column(
           width = 12,
@@ -30,7 +30,7 @@ tech_notes_panel <- function() {
             ),
             "."
           ),
-          h2("Definitions and notes for breakdowns in this dashboard"),
+          heading_text("Definitions and notes for breakdowns in this dashboard", size = "m", level = 2),
           reactableOutput("wp_chep_tech_notes"),
         )
       )

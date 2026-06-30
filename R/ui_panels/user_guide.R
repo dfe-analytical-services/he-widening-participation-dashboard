@@ -5,8 +5,8 @@ user_guide_panel <- function() {
       gov_row(
         column(
           12,
-          h1("Widening Participation dashboard"),
-          h2("Introduction and context"),
+          heading_text("Widening Participation dashboard", size = "l", level = 1),
+          heading_text("Introduction and context", size = "m", level = 2),
           p(
             "This dashboard accompanies the ",
             a(
@@ -56,7 +56,7 @@ user_guide_panel <- function() {
             school type which also looks at those studying in independent
             schools)."
           ),
-          h2("Using the dashboard"),
+          heading_text("Using the dashboard", size = "m", level = 2),
           p("The dashboard is designed to be an interactive tool, updating
             charts and tables based on the inputs selected by the user to show
             breakdowns of interest. The dashboard has tabs to show HE
@@ -91,7 +91,7 @@ user_guide_panel <- function() {
             can zoom into sections of charts by clicking and dragging over an
             area of interest. It is also possible to focus on one or several
             series presented in the chart by clicking the series in the legend."),
-          h2("Guidance sources"),
+          heading_text("Guidance sources", size = "m", level = 2),
           p(
             "Technical notes and definitions are available in the ",
             actionLink("link_to_tech_notes_tab", "technical notes"),
@@ -108,7 +108,7 @@ user_guide_panel <- function() {
               "he.statistics@education.gov.uk."
             )
           ),
-          h2("Feedback"),
+          heading_text("Feedback", size = "m", level = 2),
           p(
             "This is the first iteration of the dashboard and we invite users to
             provide feedback to shape further development for future iterations.
