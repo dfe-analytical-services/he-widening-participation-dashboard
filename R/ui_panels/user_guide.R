@@ -14,7 +14,10 @@ user_guide_panel <- function() {
               target = "_blank",
               "Widening Participation (WP) (opens in new tab)"
             ),
-            "statistics release on Explore Education Statistics. This is the first release in the Department for Education’s ",
+            "statistics release on Explore Education Statistics.",
+          ),
+          p(
+            "This is the first release in the Department for Education’s ",
             a(
               href = "https://explore-education-statistics.service.gov.uk/find-statistics/widening-participation-in-higher-education/",
               target = "_blank",
@@ -29,35 +32,24 @@ user_guide_panel <- function() {
             " series."
           ),
           p(
-            "The historic ",
-            a(
-              href = "https://explore-education-statistics.service.gov.uk/find-statistics/widening-participation-in-higher-education/",
-              target = "_blank",
-              "WP (opens in new tab)"
-            ),
-            " and ",
-            a(
-              href = "https://explore-education-statistics.service.gov.uk/find-statistics/participation-measures-in-higher-education/",
-              target = "_blank",
-              "CHEP (opens in new tab)"
-            ),
-            " statistics releases both measured higher education participation by various breakdowns and characteristics,
-            tracking proportions of cohorts entering higher education (HE) by a given age. This is
-            referred to as the progression rate in the WP publication and entry percentage in the CHEP publication.
-            Historically, the WP publication presented a HE progression rate which measured the proportion of
-            pupils in English state-funded schools and special schools at age 15 who went on to enter HE by age 19.
-            CHEP presented three key entry percentages, measuring the proportion of pupils in English state-funded
-            schools and special schools at age 15 who went on to enter HE by age 20, 25 or 30, and also included
-            entry percentages by individual year of age. This dashboard focusses on participation rates for those who went on to
-            enter HE by age 19 or 25, however underlying data for entry by age 20 and 30 (plus individual year of age)
+            "The release presents annual statistics on widening participation in higher education (HE) among pupils who attended
+            English state-funded and special schools, broken down by pupil and study characteristics."
+          ),
+          p(
+            "Participation rates relate to
+            pupils who were aged 15 at the start of the academic year and who progressed to UK Higher Education Providers and English
+            Further Education Colleges."
+          ),
+          p(
+            "This dashboard focuses on participation rates for those who went on to
+            enter HE by age 19 or 25, however underlying data for entry by age 18, 20 and 30 (plus individual year of age)
             is available on",
             a(
               href = "https://explore-education-statistics.service.gov.uk/find-statistics/widening-participation-in-higher-education/",
               target = "_blank",
               "Explore Education Statistics (opens in new tab)."
             ),
-            " As in the previous WP and CHEP
-            publications, data in this dashboard relates to pupils studying in English state-funded and special schools
+            " Data in this dashboard relates to pupils studying in English state-funded and special schools
             at age 15 (with the exception of school type which also looks at those studying in independent schools)."
           ),
           h2("Using the dashboard"),
@@ -78,8 +70,8 @@ user_guide_panel <- function() {
             tags$li("Mode of study – includes a chart and table showing participation rate in HE by the age selected,
            broken down by mode of study.")
           ),
-          p("Where no data is presented, this indicates that there is no current record of HE participation in that category for the cohort of 15-year-olds.
-            Tables throughout the dashboard can be sorted by clicking on the column headings. Hovering above charts will display labels,
+          p("Where no data is presented, this indicates that there is no current record of HE participation in that category for the cohort of 15-year-olds."),
+          p("Tables throughout the dashboard can be sorted by clicking on the column headings. Hovering above charts will display labels,
             and you can zoom into sections of charts by clicking and dragging over an area of interest. It is also possible to focus on
             one or several series presented in the chart by clicking the series in the legend."),
           h2("Guidance sources"),
