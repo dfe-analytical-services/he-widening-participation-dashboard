@@ -199,6 +199,9 @@ characteristic_plot <- function(reactive_input, output, output_name, colors_list
     df <- df %>%
       mutate(characteristic = factor(characteristic, levels = ordered_levels))
 
+    ticks <- df %>%
+      distinct(time_period, time_label)
+
     p <- plot_ly(
       df,
       x = ~time_period,
@@ -206,13 +209,16 @@ characteristic_plot <- function(reactive_input, output, output_name, colors_list
       type = "scatter",
       color = ~characteristic,
       colors = colors_list,
-      hovertemplate = "%{y:.1f}%",
+      hovertemplate = paste(
+        "%{x}<br>",
+        "%{fullData.name}: %{y:.1f}%",
+        "<extra></extra>"
+      ),
       mode = "lines+markers"
     ) %>%
       layout(
-        xaxis = list(title = "Year aged 15", zeroline = TRUE, tickmode = "array", tickvals = df$time_period, ticktext = df$time_label),
+        xaxis = list(title = "Year aged 15", zeroline = TRUE, tickmode = "array", tickvals = ticks$time_period, ticktext = ticks$time_label, showspikes = FALSE),
         yaxis = list(title = "Participation rate (%)", zeroline = TRUE, rangemode = "tozero"),
-        hovermode = "x unified",
         legend = list(
           orientation = "h",
           x = 0.5,
@@ -249,6 +255,9 @@ characteristic_bars <- function(reactive_input, output, output_name, colors_list
       mutate(characteristic = factor(characteristic, levels = ordered_levels)) %>%
       group_by(time_period)
 
+    ticks <- df %>%
+      distinct(time_period, time_label)
+
     p <- plot_ly(
       df,
       x = ~time_period,
@@ -256,13 +265,16 @@ characteristic_bars <- function(reactive_input, output, output_name, colors_list
       type = "bar",
       color = ~characteristic,
       colors = colors_list,
-      hovertemplate = "%{y:.1f}%"
+      hovertemplate = paste(
+        "%{x}<br>",
+        "%{fullData.name}: %{y:.1f}%",
+        "<extra></extra>"
+      )
     ) %>%
       layout(
         barmode = "stack",
-        xaxis = list(title = "Year aged 15", zeroline = TRUE, tickmode = "array", tickvals = df$time_period, ticktext = df$time_label),
+        xaxis = list(title = "Year aged 15", zeroline = TRUE, tickmode = "array", tickvals = ticks$time_period, ticktext = ticks$time_label, showspikes = FALSE),
         yaxis = list(title = "Participation rate (%)", zeroline = TRUE, rangemode = "tozero"),
-        hovermode = "x unified",
         legend = list(orientation = "h", x = 0.5, xanchor = "center", y = -0.3),
         margin = list(t = 80),
         font = t
