@@ -223,13 +223,12 @@ characteristic_plot <- function(reactive_input, output, output_name, colors_list
         font = t
       )
 
-    p
+    p %>%
+      config(
+        displayModeBar = FALSE
+      )
   })
 }
-
-
-
-
 
 
 # Bar chart - used for tabs based on HESA derived characteristics
@@ -269,7 +268,10 @@ characteristic_bars <- function(reactive_input, output, output_name, colors_list
         font = t
       )
 
-    p
+    p %>%
+      config(
+        displayModeBar = FALSE
+      )
   })
 }
 
