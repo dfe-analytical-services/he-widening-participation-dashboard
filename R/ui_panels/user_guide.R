@@ -83,19 +83,28 @@ user_guide_panel <- function() {
                     participation rate in HE by the age selected, broken down by
                     mode of study.")
           ),
-          p("Where no data is presented, this indicates that there is no current
-            record of HE participation in that category for the cohort of
-            15-year-olds."),
           p("Tables throughout the dashboard can be sorted by clicking on the
             column headings. Hovering above charts will display labels, and you
             can zoom into sections of charts by clicking and dragging over an
             area of interest. It is also possible to focus on one or several
             series presented in the chart by clicking the series in the legend."),
-          heading_text("Guidance sources", size = "m", level = 2),
+          heading_text("Technical notes and guidance sources", size = "m", level = 2),
+          p("Please note, where no data is presented in charts or tables, this indicates that
+            there is no current record of HE participation in that category for
+            the cohort of 15-year-olds."),
           p(
-            "Technical notes and definitions are available in the ",
+            "It is also worth noting that cohorts of 15-year-olds in the period
+            2017/18 to 2019/20 who achieved A levels between 2020/21 and 2022/23
+            had higher attainment than typical years due to alternative
+            processes put in place during the Covid pandemic. This led to more
+            students in these cohorts being accepted to HE and in particular to
+            high tariff HE."
+          ),
+          p(
+            "Further technical notes and definitions are available in the ",
             actionLink("link_to_tech_notes_tab", "technical notes"),
-            " tab and full details of the methodology are available on ",
+            " tab and footnotes presented below the charts in the dashboard.
+            Full details of the methodology are available on ",
             a(
               href = "https://explore-education-statistics.service.gov.uk/methodology/widening-participation-in-higher-education",
               target = "_blank",

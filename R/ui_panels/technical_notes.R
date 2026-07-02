@@ -13,15 +13,32 @@ tech_notes_panel <- function() {
         column(
           width = 12,
           p(
-            "The dashboard provides data on the proportions of each cohort turning 15 in a given year
-            that went on to participate in HE by age 19 or age 25. Data relates to pupils studying in English
-            state-funded and special schools at age 15 (with the exception of school type which also
-            looks at those studying A levels in independent schools). Drop-down menus at the top of each
-            dashboard tab allow customisation of breakdowns, and descriptions of each breakdown are
+            "The dashboard provides data on the proportions of each cohort
+            turning 15 in a given year that went on to participate in HE by age
+            19 or age 25. Data relates to pupils studying in English
+            state-funded and special schools at age 15 (with the exception of
+            school type which also looks at those studying A levels in
+            independent schools)."
+          ),
+          p("Please note, where no data is presented in charts or tables, this indicates that
+            there is no current record of HE participation in that category for
+            the cohort of 15-year-olds."),
+          p(
+            "It is also worth noting that cohorts of 15-year-olds in the period
+            2017/18 to 2019/20 who achieved A levels between 2020/21 and 2022/23
+            had higher attainment than typical years due to alternative
+            processes put in place during the Covid pandemic. This led to more
+            students in these cohorts being accepted to HE and in particular to
+            high tariff HE."
+          ),
+          p(
+            "Drop-down menus at the top of each dashboard tab allow
+            customisation of breakdowns, and descriptions of each breakdown are
             provided in the table below."
           ),
           p(
-            "Full information on methodologies and further technical notes are available through",
+            "Full information on methodologies and further technical notes are
+            available through",
             a(
               href = "https://explore-education-statistics.service.gov.uk/methodology/widening-participation-in-higher-education",
               target = "_blank",
