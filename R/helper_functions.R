@@ -189,12 +189,10 @@ characteristic_plot <- function(reactive_input, output, output_name, colors_list
     # Convert time to character if needed
     df$time_period <- as.character(df$time_period)
 
-    df_ordered <- df %>%
-      group_by(characteristic) %>%
-      summarise(latest_value = entry_rate[time_period == max(time_period)]) %>%
-      arrange(desc(latest_value))
-
-    ordered_levels <- df_ordered$characteristic
+    ordered_levels <- c(
+      sort(setdiff(unique(df$characteristic), "All Other Pupils")),
+      intersect("All Other Pupils", unique(df$characteristic))
+    )
 
     df <- df %>%
       mutate(characteristic = factor(characteristic, levels = ordered_levels))
@@ -244,12 +242,7 @@ characteristic_bars <- function(reactive_input, output, output_name, colors_list
 
     df$time_period <- as.character(df$time_period)
 
-    df_ordered <- df %>%
-      group_by(characteristic) %>%
-      summarise(latest_value = entry_rate[time_period == max(time_period)]) %>%
-      arrange(desc(latest_value))
-
-    ordered_levels <- df_ordered$characteristic
+    ordered_levels <- sort(unique(df$characteristic))
 
     df <- df %>%
       mutate(characteristic = factor(characteristic, levels = ordered_levels)) %>%
@@ -275,7 +268,7 @@ characteristic_bars <- function(reactive_input, output, output_name, colors_list
         barmode = "stack",
         xaxis = list(title = "Year aged 15", zeroline = TRUE, tickmode = "array", tickvals = ticks$time_period, ticktext = ticks$time_label, showspikes = FALSE),
         yaxis = list(title = "Participation rate (%)", zeroline = TRUE, rangemode = "tozero"),
-        legend = list(orientation = "h", x = 0.5, xanchor = "center", y = -0.3),
+        legend = list(orientation = "h", x = 0.5, xanchor = "center", y = -0.3, traceorder = "normal"),
         margin = list(t = 80),
         font = t
       )
