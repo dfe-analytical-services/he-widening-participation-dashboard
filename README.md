@@ -8,7 +8,7 @@ The purpose of this dashboard is to consolidate existing statistics across the d
 
 ### Repository purpose
 
-This repository is for the public external version of the app, deployed via shinapps.io. The app produced by the code in this repo is deployed at [INSERT LINK HERE ONCE DEPLOYED].
+This repository is for the public external version of the app, deployed via shinapps.io. The app produced by the code in this repo is deployed at <https://department-for-education.shinyapps.io/he-widening-participation-dashboard/>.
 
 ### Dashboard contents
 

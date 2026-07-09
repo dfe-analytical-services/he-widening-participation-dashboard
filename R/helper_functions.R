@@ -351,11 +351,22 @@ geographic_title <- function(output, output_name, char_react, tariff_react, age)
       ""
     }
 
+    cohort_yr <- if (age == 19) {
+      paste0("2020/21")
+    } else if (age == 25) {
+      paste0("2014/15")
+    } else {
+      ""
+    }
+
     heading_text(
       paste0(
         "Participation rates in", tariff_txt,
         " higher education by age ", age,
-        breakdown_txt
+        breakdown_txt,
+        " - ",
+        cohort_yr,
+        " cohort"
       ),
       size = "m",
       level = 2
