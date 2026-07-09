@@ -20,10 +20,11 @@ entry_by_19_panel <- function() {
               div(
                 class = "well",
                 layout_column_wrap(
-                  p("This panel shows the proportion of each cohort turning 15 in a given year
-                    that went on to participate in HE by age 19. Use the dropdowns below to select the
-                    desired characteristic and tariff group breakdowns, and the download button
-                    for a csv of the underlying data.")
+                  p("This panel shows the proportion of each cohort turning 15
+                    in a given year that went on to participate in HE by age 19.
+                    Use the dropdowns below to select the desired characteristic
+                    and tariff group breakdowns, and the download button for a
+                    csv of the underlying data.")
                 ),
                 layout_column_wrap(
                   height = "auto",
@@ -50,7 +51,7 @@ entry_by_19_panel <- function() {
                   shinyGovstyle::download_button(
                     "download_chars_data_19",
                     "Download underlying characteristics data",
-                    file_size = "0.6 MB"
+                    file_size = "0.3 MB"
                   )
                 )
               ),
@@ -79,11 +80,14 @@ entry_by_19_panel <- function() {
               div(
                 class = "well",
                 layout_column_wrap(
-                  p("This panel shows the proportion of the most recent cohort that went on to participate in
-                HE by age 19 by the most recent academic year. Figures are broken down by region
-                and local authority. You can use the dropdowns below to select between FSM,
-                non-FSM and all students, in addition to selecting the desired tariff group
-                breakdown. Use the download button for a csv of the underlying data.")
+                  p("This panel shows the proportion of the most recent cohort
+                    of 15-year-olds (2020/21) that went on to participate in HE
+                    by age 19 by 2024/25. Figures are
+                    broken down by region and local authority. You can use the
+                    dropdowns below to select between FSM, non-FSM and all
+                    students, in addition to selecting the desired tariff group
+                    breakdown. Use the download button for a csv of the
+                    underlying data.")
                 ),
                 layout_column_wrap(
                   width = 0.5,
@@ -107,7 +111,7 @@ entry_by_19_panel <- function() {
                   shinyGovstyle::download_button(
                     "download_geog_data_19",
                     "Download underlying geographic data",
-                    file_size = "0.7 MB"
+                    file_size = "0.3 MB"
                   )
                 )
               ),
@@ -153,16 +157,17 @@ entry_by_19_panel <- function() {
               div(
                 class = "well",
                 layout_column_wrap(
-                  p("This panel shows the proportion of each cohort turning 15 in a given year
-                    that went on to participate in HE by age 19. Figures are broken down by the level of study.
-                    Use the download button below for a csv of the underlying data.")
+                  p("This panel shows the proportion of each cohort turning 15
+                    in a given year that went on to participate in HE by age 19.
+                    Figures are broken down by the level of study. Use the
+                    download button below for a csv of the underlying data.")
                 ),
                 layout_column_wrap(
                   width = 1,
                   shinyGovstyle::download_button(
                     "download_los_data_19",
                     "Download underlying characteristics data",
-                    file_size = "0.6 MB"
+                    file_size = "0.3 MB"
                   )
                 )
               ),
@@ -174,13 +179,15 @@ entry_by_19_panel <- function() {
                 )
               ),
               h3("Footnotes"),
-              p("1. These figures refer to the first time a pupil participates in HE level study.
-                A pupil may return to HE level study in a future academic year and participate in
-                a different qualification aim, level or mode of study compared to their original
-                qualification."),
-              p("2. Only the years relating to the 15-year-old cohorts from 2004/05 onwards, for
-                which we have complete and consistent breakdowns, have been published.
-                See the methodology note for more information."),
+              p("1. These figures refer to the first time a pupil participates
+                in HE level study. A pupil may return to HE level study in a
+                future academic year and participate in a different
+                qualification aim, level or mode of study compared to their
+                original qualification."),
+              p("2. Only the years relating to the 15-year-old cohorts from
+                2004/05 onwards, for which we have complete and consistent
+                breakdowns, have been published. See the methodology note for
+                more information."),
               details(
                 inputId = "los_ts_19_tbl",
                 label = "View chart as table",
@@ -198,16 +205,17 @@ entry_by_19_panel <- function() {
               div(
                 class = "well",
                 layout_column_wrap(
-                  p("This panel shows the proportion of each cohort turning 15 in a given year
-                    that went on to participate in HE by age 19. Figures are broken down by the qualification
-                    aim. Use the download button below for a csv of the underlying data.")
+                  p("This panel shows the proportion of each cohort turning 15
+                    in a given year that went on to participate in HE by age 19.
+                    Figures are broken down by the qualification aim. Use the
+                    download button below for a csv of the underlying data.")
                 ),
                 layout_column_wrap(
                   width = 1,
                   shinyGovstyle::download_button(
                     "download_qaim_data_19",
                     "Download underlying characteristics data",
-                    file_size = "0.6 MB"
+                    file_size = "0.3 MB"
                   )
                 )
               ),
@@ -219,10 +227,11 @@ entry_by_19_panel <- function() {
                 )
               ),
               h3("Footnotes"),
-              p("1. These figures refer to the first time a pupil participates in HE level study.
-                A pupil may return to HE level study in a future academic year and participate in
-                a different qualification aim, level or mode of study compared to their original
-                qualification."),
+              p("1. These figures refer to the first time a pupil participates
+                in HE level study. A pupil may return to HE level study in a
+                future academic year and participate in a different
+                qualification aim, level or mode of study compared to their
+                original qualification."),
               p("2. Figures for apprenticeships are presented separately."),
               details(
                 inputId = "qaim_ts_19_tbl",
@@ -241,16 +250,17 @@ entry_by_19_panel <- function() {
               div(
                 class = "well",
                 layout_column_wrap(
-                  p("This panel shows the proportion of each cohort turning 15 in a given year
-                    that went on to participate in HE by age 19. Figures are broken down by the mode of study.
-                    Use the download button below for a csv of the underlying data.")
+                  p("This panel shows the proportion of each cohort turning 15
+                    in a given year that went on to participate in HE by age 19.
+                    Figures are broken down by the mode of study. Use the
+                    download button below for a csv of the underlying data.")
                 ),
                 layout_column_wrap(
                   width = 1,
                   shinyGovstyle::download_button(
                     "download_mos_data_19",
                     "Download underlying characteristics data",
-                    file_size = "0.6 MB"
+                    file_size = "0.3 MB"
                   )
                 )
               ),
@@ -262,10 +272,11 @@ entry_by_19_panel <- function() {
                 )
               ),
               h3("Footnotes"),
-              p("1. These figures refer to the first time a pupil participates in HE level study.
-                A pupil may return to HE level study in a future academic year and participate in
-                a different qualification aim, level or mode of study compared to their original
-                qualification."),
+              p("1. These figures refer to the first time a pupil participates
+                in HE level study. A pupil may return to HE level study in a
+                future academic year and participate in a different
+                qualification aim, level or mode of study compared to their
+                original qualification."),
               p("2. Figures for apprenticeships are presented separately."),
               details(
                 inputId = "mos_ts_19_tbl",

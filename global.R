@@ -80,8 +80,8 @@ source("R/read_data.R")
 
 # LINES 83 AND 84 MUST BE UPDATED
 # databricks = TRUE for private app only, published = TRUE for public app on publication, leave read_chep_nongeog() empty when using dummy data
-chep_nongeog_output <- read_chep_nongeog()
-chep_geog_output <- read_chep_geog()
+chep_nongeog_output <- read_chep_nongeog(published = TRUE)
+chep_geog_output <- read_chep_geog(published = TRUE)
 
 char_outputs <- create_characteristic_outputs(chep_nongeog_output)
 los_outputs <- create_los_outputs(chep_nongeog_output)
