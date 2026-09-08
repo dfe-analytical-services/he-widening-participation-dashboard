@@ -71,10 +71,14 @@ if (FALSE) {
   shhh(library(rsconnect))
 }
 
-print(Sys.getenv())
-message("CARTO API key")
-print(Sys.getenv("CARTO_API_KEY"))
-
+if (TRUE) {
+  message("Outputting environment info to track any included variables")
+  print(list.files("./"))
+  print(system("cat .Renviron"))
+  print(Sys.getenv())
+  message("CARTO API key")
+  print(Sys.getenv("CARTO_API_KEY"))
+}
 # Source scripts --------------------------------------------------------------
 
 # Source any scripts that are needed to process data before being passed to the server script such as
@@ -161,7 +165,10 @@ showtext_auto()
 # Extract lists for use in drop downs across characteristic tabs --------------
 
 # List of characteristic groups
-choices_char_tab_characteristic_group <- unique(chep_characteristic_output$characteristic_group) %>% sort()
+choices_char_tab_characteristic_group <- unique(
+  chep_characteristic_output$characteristic_group
+) %>%
+  sort()
 
 # List of tariff groups
 choices_char_tab_tariff_group <- unique(chep_characteristic_output$tariff_group)
@@ -169,7 +176,8 @@ choices_char_tab_tariff_group <- unique(chep_characteristic_output$tariff_group)
 # Extract lists for use in drop downs on geographic tabs ----------------------
 
 # List of characteristics
-choices_geog_tab_characteristic <- unique(chep_geog_output$characteristic) %>% sort()
+choices_geog_tab_characteristic <- unique(chep_geog_output$characteristic) %>%
+  sort()
 
 # List of tariff groups
 choices_geog_tab_tariff_group <- unique(chep_geog_output$tariff_group)
