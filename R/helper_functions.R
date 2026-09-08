@@ -560,7 +560,16 @@ regional_geographic_plot <- function(initial_input, input, characteristic_filter
 
   reg_reactive_map_to_display <- reactive({
     leaflet(reg_reactive_map_dataset()) %>%
-      addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
+      addTiles(
+        urlTemplate = paste0(
+          "https://basemaps.cartocdn.com/rastertiles/light_nolabels/{z}/{x}/{y}.png?key=",
+          Sys.getenv("CARTO_API_KEY")
+        ),
+        attribution = paste(
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>,',
+          '&copy; <a href="https://carto.com/attributions">CARTO</a>'
+        )
+      ) %>%
       setView(lng = -3.95, lat = 53, zoom = 5.5) %>%
       addPolygons(
         color = "black",
@@ -656,7 +665,16 @@ la_geographic_plot <- function(initial_input, input, characteristic_filter, tari
 
   la_reactive_map_to_display <- reactive({
     leaflet(la_reactive_map_dataset()) %>%
-      addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
+      addTiles(
+        urlTemplate = paste0(
+          "https://basemaps.cartocdn.com/rastertiles/light_nolabels/{z}/{x}/{y}.png?key=",
+          Sys.getenv("CARTO_API_KEY")
+        ),
+        attribution = paste(
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>,',
+          '&copy; <a href="https://carto.com/attributions">CARTO</a>'
+        )
+      ) %>%
       setView(lng = -3.95, lat = 53, zoom = 5.5) %>%
       addPolygons(
         color = "black",
