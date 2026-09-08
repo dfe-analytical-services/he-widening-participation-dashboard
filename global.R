@@ -67,6 +67,7 @@ shhh(library(shinya11y))
 if (FALSE) {
   shhh(library(shinytest2))
   shhh(library(chromote))
+  shhh(library(diffviewer))
   shhh(library(testthat))
   shhh(library(rsconnect))
 }
