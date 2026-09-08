@@ -74,7 +74,7 @@ if (FALSE) {
 
 if (TRUE) {
   message("Outputting environment info to track any included variables")
-  print(list.files("./"))
+  print(list.files("./", all.files = TRUE))
   print(system("cat .Renviron"))
   print(Sys.getenv())
   message("CARTO API key")

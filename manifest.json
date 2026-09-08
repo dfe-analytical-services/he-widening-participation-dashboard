@@ -6214,14 +6214,11 @@
     ".Rbuildignore": {
       "checksum": "b05bb200ea0c57599b74b0f9c0dd1ab8"
     },
-    ".RData": {
-      "checksum": "55b65cf69e4e48396747e5118e3c1e0d"
-    },
     ".Renviron": {
       "checksum": "d41d8cd98f00b204e9800998ecf8427e"
     },
     ".Rprofile": {
-      "checksum": "9f7113707aa47dc2d78b39d7dcc928f2"
+      "checksum": "26d5c1d97cd00da4255109c274263d3d"
     },
     "datafiles_log.csv": {
       "checksum": "0be432176b0605da3a2067bcf3c8db15"
@@ -6245,7 +6242,7 @@
       "checksum": "43e73f746325ad51affd28229d7aeda4"
     },
     "global.R": {
-      "checksum": "90ba89740be7f5f3ebbe4b1ba4331ddc"
+      "checksum": "8b8e12ca47fd7e775b1f12a061026ee2"
     },
     "google-analytics.html": {
       "checksum": "df02fdf1a3842b35f1eab63351b960ff"
