@@ -563,7 +563,7 @@ regional_geographic_plot <- function(initial_input, input, characteristic_filter
       addTiles(
         urlTemplate = paste0(
           "https://basemaps.cartocdn.com/rastertiles/light_nolabels/{z}/{x}/{y}.png?key=",
-          Sys.getenv("CARTO_API_KEY")
+          Sys.getenv("CARTO_API_TOKEN")
         ),
         attribution = paste(
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>,',
@@ -668,7 +668,7 @@ la_geographic_plot <- function(initial_input, input, characteristic_filter, tari
       addTiles(
         urlTemplate = paste0(
           "https://basemaps.cartocdn.com/rastertiles/light_nolabels/{z}/{x}/{y}.png?key=",
-          Sys.getenv("CARTO_API_KEY")
+          Sys.getenv("CARTO_API_TOKEN")
         ),
         attribution = paste(
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>,',
