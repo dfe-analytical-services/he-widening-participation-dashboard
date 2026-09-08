@@ -68,7 +68,12 @@ if (FALSE) {
   shhh(library(shinytest2))
   shhh(library(chromote))
   shhh(library(testthat))
+  shhh(library(rsconnect))
 }
+
+print(Sys.getenv())
+message("CARTO API key")
+print(Sys.getenv("CARTO_API_KEY"))
 
 # Source scripts --------------------------------------------------------------
 
