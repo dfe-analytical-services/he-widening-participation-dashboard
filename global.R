@@ -72,13 +72,10 @@ if (FALSE) {
   shhh(library(rsconnect))
 }
 
-if (TRUE) {
+if (FALSE) {
   message("Outputting environment info to track any included variables")
-  print(list.files("./", all.files = TRUE))
-  print(system("cat .Renviron"))
-  print(Sys.getenv())
   message("CARTO API key")
-  print(Sys.getenv("CARTO_API_KEY"))
+  print(Sys.getenv("CARTO_API_TOKEN"))
 }
 # Source scripts --------------------------------------------------------------
 
