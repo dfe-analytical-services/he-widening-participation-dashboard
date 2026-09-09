@@ -67,9 +67,16 @@ shhh(library(shinya11y))
 if (FALSE) {
   shhh(library(shinytest2))
   shhh(library(chromote))
+  shhh(library(diffviewer))
   shhh(library(testthat))
+  shhh(library(rsconnect))
 }
 
+if (FALSE) {
+  message("Outputting environment info to track any included variables")
+  message("CARTO API key")
+  print(Sys.getenv("CARTO_API_TOKEN"))
+}
 # Source scripts --------------------------------------------------------------
 
 # Source any scripts that are needed to process data before being passed to the server script such as
@@ -156,7 +163,10 @@ showtext_auto()
 # Extract lists for use in drop downs across characteristic tabs --------------
 
 # List of characteristic groups
-choices_char_tab_characteristic_group <- unique(chep_characteristic_output$characteristic_group) %>% sort()
+choices_char_tab_characteristic_group <- unique(
+  chep_characteristic_output$characteristic_group
+) %>%
+  sort()
 
 # List of tariff groups
 choices_char_tab_tariff_group <- unique(chep_characteristic_output$tariff_group)
@@ -164,7 +174,8 @@ choices_char_tab_tariff_group <- unique(chep_characteristic_output$tariff_group)
 # Extract lists for use in drop downs on geographic tabs ----------------------
 
 # List of characteristics
-choices_geog_tab_characteristic <- unique(chep_geog_output$characteristic) %>% sort()
+choices_geog_tab_characteristic <- unique(chep_geog_output$characteristic) %>%
+  sort()
 
 # List of tariff groups
 choices_geog_tab_tariff_group <- unique(chep_geog_output$tariff_group)

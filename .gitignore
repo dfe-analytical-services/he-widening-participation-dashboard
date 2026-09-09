@@ -2,7 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-.renviron
 .positai
 SQL/CHEP_dashboard_data_-_clean_copy_creating_databricks_tables.ipynb
 *_.new.png
