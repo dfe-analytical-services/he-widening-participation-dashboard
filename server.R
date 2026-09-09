@@ -404,10 +404,4 @@ server <- function(input, output, session) {
       }, 400);
     ")
   })
-
-
-  # Stop app ------------------------------------------------------------------
-  session$onSessionEnded(function() {
-    stopApp()
-  })
 }

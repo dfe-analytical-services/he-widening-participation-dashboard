@@ -6200,7 +6200,7 @@
       "checksum": "7fec9834ee9927cf76307a613d0e699e"
     },
     ".github/workflows/deploy-shiny.yaml": {
-      "checksum": "c4d6c81e26e864c08e0cecf42124487d"
+      "checksum": "4967cb43aca4917b2e4c69c98c70ea81"
     },
     ".github/workflows/lintr.yml": {
       "checksum": "1dfc7a1fd8514c8e667b10797a8b6a42"
@@ -6214,11 +6214,8 @@
     ".Rbuildignore": {
       "checksum": "b05bb200ea0c57599b74b0f9c0dd1ab8"
     },
-    ".Renviron": {
-      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
-    },
     ".Rprofile": {
-      "checksum": "26d5c1d97cd00da4255109c274263d3d"
+      "checksum": "8d2d09a9cb2e3324006442cbf91684e7"
     },
     "datafiles_log.csv": {
       "checksum": "0be432176b0605da3a2067bcf3c8db15"
@@ -6242,7 +6239,7 @@
       "checksum": "43e73f746325ad51affd28229d7aeda4"
     },
     "global.R": {
-      "checksum": "8b8e12ca47fd7e775b1f12a061026ee2"
+      "checksum": "958afe30f5740a6ae7f6cb2d5a871bfb"
     },
     "google-analytics.html": {
       "checksum": "df02fdf1a3842b35f1eab63351b960ff"
@@ -6251,7 +6248,7 @@
       "checksum": "4ff1ab40947c9cebe66adef6c76f9ba7"
     },
     "R/helper_functions.R": {
-      "checksum": "49c8f0dc5557d8a0952f856390f5275f"
+      "checksum": "0a1a8e39074e2968d0e418c71f3ca49d"
     },
     "R/read_data.R": {
       "checksum": "922984b698a5ce48061d5d0679441b1b"
