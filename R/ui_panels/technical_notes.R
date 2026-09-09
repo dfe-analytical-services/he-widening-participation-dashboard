@@ -20,11 +20,9 @@ tech_notes_panel <- function() {
             school type which also looks at those studying A levels in
             independent schools)."
           ),
-          p(
-            "Please note, where no data is presented in charts or tables, this indicates that
+          p("Please note, where no data is presented in charts or tables, this indicates that
             there is no current record of HE participation in that category for
-            the cohort of 15-year-olds."
-          ),
+            the cohort of 15-year-olds."),
           p(
             "It is also worth noting that cohorts of 15-year-olds in the period
             2017/18 to 2019/20 who achieved A levels between 2020/21 and 2022/23
@@ -49,11 +47,7 @@ tech_notes_panel <- function() {
             ),
             "."
           ),
-          heading_text(
-            "Definitions and notes for breakdowns in this dashboard",
-            size = "m",
-            level = 2
-          ),
+          heading_text("Definitions and notes for breakdowns in this dashboard", size = "m", level = 2),
           reactableOutput("wp_chep_tech_notes"),
         )
       )

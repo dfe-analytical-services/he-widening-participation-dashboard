@@ -6,11 +6,7 @@ entry_by_25_panel <- function() {
         column(
           width = 12,
           id = "main_col",
-          heading_text(
-            "Widening Participation dashboard",
-            size = "l",
-            level = 1
-          ),
+          heading_text("Widening Participation dashboard", size = "l", level = 1),
         ),
         # Tabset for individual tabs ------------------------------------------
         column(
@@ -24,13 +20,11 @@ entry_by_25_panel <- function() {
               div(
                 class = "well",
                 layout_column_wrap(
-                  p(
-                    "This panel shows the proportion of each cohort turning 15
+                  p("This panel shows the proportion of each cohort turning 15
                     in a given year that went on to participate in HE by age 25.
                     Use the dropdowns below to select the desired characteristic
                     and tariff group breakdowns, and the download button for a
-                    csv of the underlying data."
-                  )
+                    csv of the underlying data.")
                 ),
                 layout_column_wrap(
                   height = "auto",
@@ -65,19 +59,18 @@ entry_by_25_panel <- function() {
               bslib::layout_columns(
                 div(
                   style = "display: flex; flex-direction: column; gap: 1rem;",
-                  plotlyOutput(
-                    "characteristic_timeseries_25_plot",
-                    height = "750px"
-                  )
+                  plotlyOutput("characteristic_timeseries_25_plot", height = "750px")
                 )
               ),
               uiOutput("footnotes25"),
               details(
                 inputId = "char_ts_25_tbl",
                 label = "View chart as table",
-                help_text = (HTML(paste0(
-                  reactableOutput("characteristic_timeseries_25_table")
-                )))
+                help_text = (
+                  HTML(paste0(
+                    reactableOutput("characteristic_timeseries_25_table")
+                  ))
+                )
               )
             ),
             # Geographic tab --------------------------------------------------
@@ -87,16 +80,14 @@ entry_by_25_panel <- function() {
               div(
                 class = "well",
                 layout_column_wrap(
-                  p(
-                    "This panel shows the proportion of the most recent cohort
+                  p("This panel shows the proportion of the most recent cohort
                     of 15-year-olds (2014/15) that went on to participate in HE
                     by age 25 by 2024/25. Figures are
                     broken down by region and local authority. You can use the
                     dropdowns below to select between FSM, non-FSM and all
                     students, in addition to selecting the desired tariff group
                     breakdown. Use the download button for a csv of the
-                    underlying data."
-                  )
+                    underlying data.")
                 ),
                 layout_column_wrap(
                   width = 0.5,
@@ -166,12 +157,10 @@ entry_by_25_panel <- function() {
               div(
                 class = "well",
                 layout_column_wrap(
-                  p(
-                    "This panel shows the proportion of each cohort turning 15
+                  p("This panel shows the proportion of each cohort turning 15
                     in a given year that went on to participate in HE by age 25.
                     Figures are broken down by the level of study. Use the
-                    download button below for a csv of the underlying data."
-                  )
+                    download button below for a csv of the underlying data.")
                 ),
                 layout_column_wrap(
                   width = 1,
@@ -182,11 +171,7 @@ entry_by_25_panel <- function() {
                   )
                 )
               ),
-              heading_text(
-                "Participation rates in higher education by age 25 broken down by level of study",
-                size = "m",
-                level = 2
-              ),
+              heading_text("Participation rates in higher education by age 25 broken down by level of study", size = "m", level = 2),
               bslib::layout_columns(
                 div(
                   style = "display: flex; flex-direction: column; gap: 1rem;",
@@ -194,25 +179,23 @@ entry_by_25_panel <- function() {
                 )
               ),
               h3("Footnotes"),
-              p(
-                "1. These figures refer to the first time a pupil participates
+              p("1. These figures refer to the first time a pupil participates
                 in HE level study. A pupil may return to HE level study in a
                 future academic year and participate in a different
                 qualification aim, level or mode of study compared to their
-                original qualification."
-              ),
-              p(
-                "2. Only the years relating to the 15-year-old cohorts from
+                original qualification."),
+              p("2. Only the years relating to the 15-year-old cohorts from
                 2004/05 onwards, for which we have complete and consistent
                 breakdowns, have been published. See the methodology note for
-                more information."
-              ),
+                more information."),
               details(
                 inputId = "los_ts_25_tbl",
                 label = "View chart as table",
-                help_text = (HTML(paste0(
-                  reactableOutput("los_timeseries_25_table")
-                )))
+                help_text = (
+                  HTML(paste0(
+                    reactableOutput("los_timeseries_25_table")
+                  ))
+                )
               )
             ),
             # Qualification aim tab -------------------------------------------
@@ -222,12 +205,10 @@ entry_by_25_panel <- function() {
               div(
                 class = "well",
                 layout_column_wrap(
-                  p(
-                    "This panel shows the proportion of each cohort turning 15
+                  p("This panel shows the proportion of each cohort turning 15
                     in a given year that went on to participate in HE by age 25.
                     Figures are broken down by the qualification aim. Use the
-                    download button below for a csv of the underlying data."
-                  )
+                    download button below for a csv of the underlying data.")
                 ),
                 layout_column_wrap(
                   width = 1,
@@ -238,11 +219,7 @@ entry_by_25_panel <- function() {
                   )
                 )
               ),
-              heading_text(
-                "Participation rates in higher education by age 25 broken down by qualification aim",
-                size = "m",
-                level = 2
-              ),
+              heading_text("Participation rates in higher education by age 25 broken down by qualification aim", size = "m", level = 2),
               bslib::layout_columns(
                 div(
                   style = "display: flex; flex-direction: column; gap: 1rem;",
@@ -250,20 +227,20 @@ entry_by_25_panel <- function() {
                 )
               ),
               h3("Footnotes"),
-              p(
-                "1. These figures refer to the first time a pupil participates
+              p("1. These figures refer to the first time a pupil participates
                 in HE level study. A pupil may return to HE level study in a
                 future academic year and participate in a different
                 qualification aim, level or mode of study compared to their
-                original qualification."
-              ),
+                original qualification."),
               p("2. Figures for apprenticeships are presented separately."),
               details(
                 inputId = "qaim_ts_25_tbl",
                 label = "View chart as table",
-                help_text = (HTML(paste0(
-                  reactableOutput("qaim_timeseries_25_table")
-                )))
+                help_text = (
+                  HTML(paste0(
+                    reactableOutput("qaim_timeseries_25_table")
+                  ))
+                )
               )
             ),
             # Mode of study tab -----------------------------------------------
@@ -273,12 +250,10 @@ entry_by_25_panel <- function() {
               div(
                 class = "well",
                 layout_column_wrap(
-                  p(
-                    "This panel shows the proportion of each cohort turning 15
+                  p("This panel shows the proportion of each cohort turning 15
                     in a given year that went on to participate in HE by age 25.
                     Figures are broken down by the mode of study. Use the
-                    download button below for a csv of the underlying data."
-                  )
+                    download button below for a csv of the underlying data.")
                 ),
                 layout_column_wrap(
                   width = 1,
@@ -289,11 +264,7 @@ entry_by_25_panel <- function() {
                   )
                 )
               ),
-              heading_text(
-                "Participation rates in higher education by age 25 broken down by mode of study",
-                size = "m",
-                level = 2
-              ),
+              heading_text("Participation rates in higher education by age 25 broken down by mode of study", size = "m", level = 2),
               bslib::layout_columns(
                 div(
                   style = "display: flex; flex-direction: column; gap: 1rem;",
@@ -301,20 +272,20 @@ entry_by_25_panel <- function() {
                 )
               ),
               h3("Footnotes"),
-              p(
-                "1. These figures refer to the first time a pupil participates
+              p("1. These figures refer to the first time a pupil participates
                 in HE level study. A pupil may return to HE level study in a
                 future academic year and participate in a different
                 qualification aim, level or mode of study compared to their
-                original qualification."
-              ),
+                original qualification."),
               p("2. Figures for apprenticeships are presented separately."),
               details(
                 inputId = "mos_ts_25_tbl",
                 label = "View chart as table",
-                help_text = (HTML(paste0(
-                  reactableOutput("mos_timeseries_25_table")
-                )))
+                help_text = (
+                  HTML(paste0(
+                    reactableOutput("mos_timeseries_25_table")
+                  ))
+                )
               )
             )
           )

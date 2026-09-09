@@ -15,19 +15,13 @@ server <- function(input, output, session) {
   # This section stores any input choices in the url
   setBookmarkExclude(c(
     "cookies",
-    "tabBenchmark_rows_current",
-    "tabBenchmark_rows_all",
-    "tabBenchmark_columns_selected",
-    "tabBenchmark_cell_clicked",
-    "tabBenchmark_cells_selected",
-    "tabBenchmark_search",
-    "tabBenchmark_rows_selected",
-    "tabBenchmark_row_last_clicked",
+    "tabBenchmark_rows_current", "tabBenchmark_rows_all",
+    "tabBenchmark_columns_selected", "tabBenchmark_cell_clicked",
+    "tabBenchmark_cells_selected", "tabBenchmark_search",
+    "tabBenchmark_rows_selected", "tabBenchmark_row_last_clicked",
     "tabBenchmark_state",
     "plotly_relayout-A",
-    "plotly_click-A",
-    "plotly_hover-A",
-    "plotly_afterplot-A",
+    "plotly_click-A", "plotly_hover-A", "plotly_afterplot-A",
     ".clientValue-default-plotlyCrosstalkOpts"
   ))
 
@@ -41,6 +35,7 @@ server <- function(input, output, session) {
     updateQueryString(url)
   })
 
+
   # Cookies logic -------------------------------------------------------------
   output$cookies_status <- dfeshiny::cookies_banner_server(
     input_cookies = shiny::reactive(input$cookies),
@@ -53,24 +48,24 @@ server <- function(input, output, session) {
     google_analytics_key = google_analytics_key
   )
 
+
   # Set up characteristics datasets with timeseries data ----------------------
   # Entry by 19 - characteristics breakdown
   characteristic_reactive_timeseries_19 <- reactive({
-    chep_characteristics_output_19 %>%
-      filter(
-        characteristic_group == input$selectCharTabCharacteristicGroup19,
-        tariff_group == input$SelectCharTabTariffGroup19
-      )
+    chep_characteristics_output_19 %>% filter(
+      characteristic_group == input$selectCharTabCharacteristicGroup19,
+      tariff_group == input$SelectCharTabTariffGroup19
+    )
   })
 
   # Entry by 25 - characteristics breakdown
   characteristic_reactive_timeseries_25 <- reactive({
-    chep_characteristics_output_25 %>%
-      filter(
-        characteristic_group == input$selectCharTabCharacteristicGroup25,
-        tariff_group == input$SelectCharTabTariffGroup25
-      )
+    chep_characteristics_output_25 %>% filter(
+      characteristic_group == input$selectCharTabCharacteristicGroup25,
+      tariff_group == input$SelectCharTabTariffGroup25
+    )
   })
+
 
   # Set up level of study datasets with timeseries data -----------------------
   # Entry by 19 - level of study breakdown
@@ -83,6 +78,7 @@ server <- function(input, output, session) {
     chep_los_output_25
   })
 
+
   # Set up mode of study datasets with timeseries data ------------------------
   # Entry by 19 - level of study breakdown
   mos_reactive_timeseries_19 <- reactive({
@@ -93,6 +89,7 @@ server <- function(input, output, session) {
   mos_reactive_timeseries_25 <- reactive({
     chep_mos_output_25
   })
+
 
   # Set up qualification aim datasets with timeseries data --------------------
   # Entry by 19 - level of study breakdown
@@ -105,57 +102,45 @@ server <- function(input, output, session) {
     chep_qaim_output_25
   })
 
+
   # Set up geographic datasets ------------------------------------------------
   # Entry by 19 - geographic breakdown
   geographic_reactive_19 <- reactive({
-    chep_geographic_output_19 %>%
-      filter(
-        characteristic == input$selectGeogTabCharacteristicGroup19,
-        tariff_group == input$SelectGeogTabTariffGroup19
-      )
+    chep_geographic_output_19 %>% filter(
+      characteristic == input$selectGeogTabCharacteristicGroup19,
+      tariff_group == input$SelectGeogTabTariffGroup19
+    )
   })
 
   # Entry by 25 - geographic breakdown
   geographic_reactive_25 <- reactive({
-    chep_geographic_output_25 %>%
-      filter(
-        characteristic == input$selectGeogTabCharacteristicGroup25,
-        tariff_group == input$SelectGeogTabTariffGroup25
-      )
+    chep_geographic_output_25 %>% filter(
+      characteristic == input$selectGeogTabCharacteristicGroup25,
+      tariff_group == input$SelectGeogTabTariffGroup25
+    )
   })
+
 
   # Set up footnotes reactive to the characteristics selected -----------------
   # Footnotes for by 19 tab
   footnotes_reactive_19 <- reactive({
-    wp_chep_tech_notes_csv %>%
-      filter(
-        Breakdown == input$selectCharTabCharacteristicGroup19
-      )
+    wp_chep_tech_notes_csv %>% filter(
+      Breakdown == input$selectCharTabCharacteristicGroup19
+    )
   })
 
   # Footnotes for by 25 tab
   footnotes_reactive_25 <- reactive({
-    wp_chep_tech_notes_csv %>%
-      filter(
-        Breakdown == input$selectCharTabCharacteristicGroup25
-      )
+    wp_chep_tech_notes_csv %>% filter(
+      Breakdown == input$selectCharTabCharacteristicGroup25
+    )
   })
 
+
   # Set up characteristics titles ---------------------------------------------
-  characteristic_title(
-    output,
-    "characteristic_chart_title_19",
-    reactive(input$selectCharTabCharacteristicGroup19),
-    reactive(input$SelectCharTabTariffGroup19),
-    19
-  )
-  characteristic_title(
-    output,
-    "characteristic_chart_title_25",
-    reactive(input$selectCharTabCharacteristicGroup25),
-    reactive(input$SelectCharTabTariffGroup25),
-    25
-  )
+  characteristic_title(output, "characteristic_chart_title_19", reactive(input$selectCharTabCharacteristicGroup19), reactive(input$SelectCharTabTariffGroup19), 19)
+  characteristic_title(output, "characteristic_chart_title_25", reactive(input$selectCharTabCharacteristicGroup25), reactive(input$SelectCharTabTariffGroup25), 25)
+
 
   # Set up characteristics charts ---------------------------------------------
   # Line chart for participation rate over time by selected characteristic
@@ -190,18 +175,9 @@ server <- function(input, output, session) {
   )
 
   # Use characteristic_plot function from helper functions to create charts
-  characteristic_plot(
-    characteristic_reactive_timeseries_19,
-    output,
-    "characteristic_timeseries_19_plot",
-    characteristic_colors
-  )
-  characteristic_plot(
-    characteristic_reactive_timeseries_25,
-    output,
-    "characteristic_timeseries_25_plot",
-    characteristic_colors
-  )
+  characteristic_plot(characteristic_reactive_timeseries_19, output, "characteristic_timeseries_19_plot", characteristic_colors)
+  characteristic_plot(characteristic_reactive_timeseries_25, output, "characteristic_timeseries_25_plot", characteristic_colors)
+
 
   # Set up level of study charts ----------------------------------------------
   # Line chart for participation rate over time by selected characteristic
@@ -215,18 +191,9 @@ server <- function(input, output, session) {
   )
 
   # Use characteristic_plot function from helper functions to create charts
-  characteristic_bars(
-    los_reactive_timeseries_19,
-    output,
-    "los_timeseries_19_plot",
-    los_colors
-  )
-  characteristic_bars(
-    los_reactive_timeseries_25,
-    output,
-    "los_timeseries_25_plot",
-    los_colors
-  )
+  characteristic_bars(los_reactive_timeseries_19, output, "los_timeseries_19_plot", los_colors)
+  characteristic_bars(los_reactive_timeseries_25, output, "los_timeseries_25_plot", los_colors)
+
 
   # Set up mode of study charts -----------------------------------------------
   # Line chart for participation rate over time by selected characteristic
@@ -237,18 +204,9 @@ server <- function(input, output, session) {
   )
 
   # Use characteristic_plot function from helper functions to create charts
-  characteristic_bars(
-    mos_reactive_timeseries_19,
-    output,
-    "mos_timeseries_19_plot",
-    mos_colors
-  )
-  characteristic_bars(
-    mos_reactive_timeseries_25,
-    output,
-    "mos_timeseries_25_plot",
-    mos_colors
-  )
+  characteristic_bars(mos_reactive_timeseries_19, output, "mos_timeseries_19_plot", mos_colors)
+  characteristic_bars(mos_reactive_timeseries_25, output, "mos_timeseries_25_plot", mos_colors)
+
 
   # Set up qualification aim charts -------------------------------------------
   # Line chart for participation rate over time by selected characteristic
@@ -263,205 +221,76 @@ server <- function(input, output, session) {
   )
 
   # Use characteristic_plot function from helper functions to create charts
-  characteristic_bars(
-    qaim_reactive_timeseries_19,
-    output,
-    "qaim_timeseries_19_plot",
-    qaim_colors
-  )
-  characteristic_bars(
-    qaim_reactive_timeseries_25,
-    output,
-    "qaim_timeseries_25_plot",
-    qaim_colors
-  )
+  characteristic_bars(qaim_reactive_timeseries_19, output, "qaim_timeseries_19_plot", qaim_colors)
+  characteristic_bars(qaim_reactive_timeseries_25, output, "qaim_timeseries_25_plot", qaim_colors)
+
 
   # Set up characteristics tables ---------------------------------------------
-  characteristic_table(
-    characteristic_reactive_timeseries_19,
-    output,
-    "characteristic_timeseries_19_table"
-  )
-  characteristic_table(
-    characteristic_reactive_timeseries_25,
-    output,
-    "characteristic_timeseries_25_table"
-  )
+  characteristic_table(characteristic_reactive_timeseries_19, output, "characteristic_timeseries_19_table")
+  characteristic_table(characteristic_reactive_timeseries_25, output, "characteristic_timeseries_25_table")
+
 
   # Set up level of study tables ----------------------------------------------
-  characteristic_table(
-    los_reactive_timeseries_19,
-    output,
-    "los_timeseries_19_table"
-  )
-  characteristic_table(
-    los_reactive_timeseries_25,
-    output,
-    "los_timeseries_25_table"
-  )
+  characteristic_table(los_reactive_timeseries_19, output, "los_timeseries_19_table")
+  characteristic_table(los_reactive_timeseries_25, output, "los_timeseries_25_table")
+
 
   # Set up mode of study tables -----------------------------------------------
-  characteristic_table(
-    mos_reactive_timeseries_19,
-    output,
-    "mos_timeseries_19_table"
-  )
-  characteristic_table(
-    mos_reactive_timeseries_25,
-    output,
-    "mos_timeseries_25_table"
-  )
+  characteristic_table(mos_reactive_timeseries_19, output, "mos_timeseries_19_table")
+  characteristic_table(mos_reactive_timeseries_25, output, "mos_timeseries_25_table")
+
 
   # Set up qualification aim tables -------------------------------------------
-  characteristic_table(
-    qaim_reactive_timeseries_19,
-    output,
-    "qaim_timeseries_19_table"
-  )
-  characteristic_table(
-    qaim_reactive_timeseries_25,
-    output,
-    "qaim_timeseries_25_table"
-  )
+  characteristic_table(qaim_reactive_timeseries_19, output, "qaim_timeseries_19_table")
+  characteristic_table(qaim_reactive_timeseries_25, output, "qaim_timeseries_25_table")
+
 
   # Set up geographic titles --------------------------------------------------
-  geographic_title(
-    output,
-    "geographic_title_19",
-    reactive(input$selectGeogTabCharacteristicGroup19),
-    reactive(input$SelectGeogTabTariffGroup19),
-    19
-  )
-  geographic_title(
-    output,
-    "geographic_title_25",
-    reactive(input$selectGeogTabCharacteristicGroup25),
-    reactive(input$SelectGeogTabTariffGroup25),
-    25
-  )
+  geographic_title(output, "geographic_title_19", reactive(input$selectGeogTabCharacteristicGroup19), reactive(input$SelectGeogTabTariffGroup19), 19)
+  geographic_title(output, "geographic_title_25", reactive(input$selectGeogTabCharacteristicGroup25), reactive(input$SelectGeogTabTariffGroup25), 25)
+
 
   # Set up geographic tables - region table -----------------------------------
   region_table(geographic_reactive_19, output, "region_19_table")
   region_table(geographic_reactive_25, output, "region_25_table")
 
+
   # Set up geographic tables - local authority table --------------------------
   la_table(geographic_reactive_19, output, "la_19_table")
   la_table(geographic_reactive_25, output, "la_25_table")
 
+
   # Set up geographic chart - region leaflet map ------------------------------
-  regional_geographic_plot(
-    chep_geographic_output_19,
-    input,
-    "selectGeogTabCharacteristicGroup19",
-    "SelectGeogTabTariffGroup19",
-    output,
-    "reg_19_map",
-    df_reg_geo_2019,
-    "rgn19cd"
-  )
-  regional_geographic_plot(
-    chep_geographic_output_25,
-    input,
-    "selectGeogTabCharacteristicGroup25",
-    "SelectGeogTabTariffGroup25",
-    output,
-    "reg_25_map",
-    df_reg_geo_2019,
-    "rgn19cd"
-  )
+  regional_geographic_plot(chep_geographic_output_19, input, "selectGeogTabCharacteristicGroup19", "SelectGeogTabTariffGroup19", output, "reg_19_map", df_reg_geo_2019, "rgn19cd")
+  regional_geographic_plot(chep_geographic_output_25, input, "selectGeogTabCharacteristicGroup25", "SelectGeogTabTariffGroup25", output, "reg_25_map", df_reg_geo_2019, "rgn19cd")
+
 
   # Set up geographic chart - local authority leaflet map ---------------------
-  la_geographic_plot(
-    chep_geographic_output_19,
-    input,
-    "selectGeogTabCharacteristicGroup19",
-    "SelectGeogTabTariffGroup19",
-    output,
-    "la_19_map",
-    df_la_geo_2019,
-    "ctyua19cd"
-  )
-  la_geographic_plot(
-    chep_geographic_output_25,
-    input,
-    "selectGeogTabCharacteristicGroup25",
-    "SelectGeogTabTariffGroup25",
-    output,
-    "la_25_map",
-    df_la_geo_2018,
-    "ctyua18cd"
-  )
+  la_geographic_plot(chep_geographic_output_19, input, "selectGeogTabCharacteristicGroup19", "SelectGeogTabTariffGroup19", output, "la_19_map", df_la_geo_2019, "ctyua19cd")
+  la_geographic_plot(chep_geographic_output_25, input, "selectGeogTabCharacteristicGroup25", "SelectGeogTabTariffGroup25", output, "la_25_map", df_la_geo_2018, "ctyua18cd")
+
 
   # Download the underlying data button (one required for each tab given how the interactivity works) --------------------------------------
   # Characteristics data
-  download_prep(
-    output,
-    "download_chars_data_19",
-    "wp_characteristics_dashboard_underlying_data.csv",
-    chep_nongeog_output
-  )
-  download_prep(
-    output,
-    "download_chars_data_25",
-    "wp_characteristics_dashboard_underlying_data.csv",
-    chep_nongeog_output
-  )
+  download_prep(output, "download_chars_data_19", "wp_characteristics_dashboard_underlying_data.csv", chep_nongeog_output)
+  download_prep(output, "download_chars_data_25", "wp_characteristics_dashboard_underlying_data.csv", chep_nongeog_output)
 
   # Level of study data - same as characteristics data
-  download_prep(
-    output,
-    "download_los_data_19",
-    "wp_characteristics_dashboard_underlying_data.csv",
-    chep_nongeog_output
-  )
-  download_prep(
-    output,
-    "download_los_data_25",
-    "wp_characteristics_dashboard_underlying_data.csv",
-    chep_nongeog_output
-  )
+  download_prep(output, "download_los_data_19", "wp_characteristics_dashboard_underlying_data.csv", chep_nongeog_output)
+  download_prep(output, "download_los_data_25", "wp_characteristics_dashboard_underlying_data.csv", chep_nongeog_output)
 
   # Mode of study data - same as characteristics data
-  download_prep(
-    output,
-    "download_mos_data_19",
-    "wp_characteristics_dashboard_underlying_data.csv",
-    chep_nongeog_output
-  )
-  download_prep(
-    output,
-    "download_mos_data_25",
-    "wp_characteristics_dashboard_underlying_data.csv",
-    chep_nongeog_output
-  )
+  download_prep(output, "download_mos_data_19", "wp_characteristics_dashboard_underlying_data.csv", chep_nongeog_output)
+  download_prep(output, "download_mos_data_25", "wp_characteristics_dashboard_underlying_data.csv", chep_nongeog_output)
 
   # Qualification aim data - same as characteristics data
-  download_prep(
-    output,
-    "download_qaim_data_19",
-    "wp_characteristics_dashboard_underlying_data.csv",
-    chep_nongeog_output
-  )
-  download_prep(
-    output,
-    "download_qaim_data_25",
-    "wp_characteristics_dashboard_underlying_data.csv",
-    chep_nongeog_output
-  )
+  download_prep(output, "download_qaim_data_19", "wp_characteristics_dashboard_underlying_data.csv", chep_nongeog_output)
+  download_prep(output, "download_qaim_data_25", "wp_characteristics_dashboard_underlying_data.csv", chep_nongeog_output)
 
   # Geography data
-  download_prep(
-    output,
-    "download_geog_data_19",
-    "wp_geography_dashboard_underlying_data.csv",
-    chep_geog_output
-  )
-  download_prep(
-    output,
-    "download_geog_data_25",
-    "wp_geography_dashboard_underlying_data.csv",
-    chep_geog_output
-  )
+  download_prep(output, "download_geog_data_19", "wp_geography_dashboard_underlying_data.csv", chep_geog_output)
+  download_prep(output, "download_geog_data_25", "wp_geography_dashboard_underlying_data.csv", chep_geog_output)
+
 
   # Set up notes table --------------------------------------------------------
   output$wp_chep_tech_notes <- renderReactable({
@@ -524,6 +353,7 @@ server <- function(input, output, session) {
     ))
   })
 
+
   # navigation link within text -----------------------------------------------
   observeEvent(input$nav_link, {
     shiny::updateTabsetPanel(session, "navlistPanel", selected = input$nav_link)
@@ -544,25 +374,16 @@ server <- function(input, output, session) {
   })
 
   shiny::observeEvent(input$use_of_cookies, {
-    shiny::updateTabsetPanel(
-      session,
-      "navlistPanel",
-      selected = "cookies_panel_ui"
-    )
+    shiny::updateTabsetPanel(session, "navlistPanel", selected = "cookies_panel_ui")
   })
 
   shiny::observeEvent(input$support_and_feedback, {
-    shiny::updateTabsetPanel(
-      session,
-      "navlistPanel",
-      selected = "support_panel_ui"
-    )
+    shiny::updateTabsetPanel(session, "navlistPanel", selected = "support_panel_ui")
   })
 
   shiny::observeEvent(input$privacy_notice, {
     showModal(modalDialog(
-      external_link(
-        "https://www.gov.uk/government/organisations/department-for-education/about/personal-information-charter", # nolint
+      external_link("https://www.gov.uk/government/organisations/department-for-education/about/personal-information-charter", # nolint
         "Privacy notice",
         add_warning = FALSE
       ),
@@ -571,8 +392,7 @@ server <- function(input, output, session) {
     ))
 
     # JavaScript to auto-click the link and close the modal
-    shinyjs::runjs(
-      "
+    shinyjs::runjs("
       setTimeout(function() {
         var link = document.querySelector('.modal a');
         if (link) {
@@ -582,7 +402,6 @@ server <- function(input, output, session) {
           }, 20); // Extra delay to avoid any race conditions
         }
       }, 400);
-    "
-    )
+    ")
   })
 }

@@ -5,11 +5,7 @@ user_guide_panel <- function() {
       gov_row(
         column(
           12,
-          heading_text(
-            "Widening Participation dashboard",
-            size = "l",
-            level = 1
-          ),
+          heading_text("Widening Participation dashboard", size = "l", level = 1),
           heading_text("Introduction and context", size = "m", level = 2),
           p(
             "This dashboard accompanies the ",
@@ -61,61 +57,41 @@ user_guide_panel <- function() {
             schools)."
           ),
           heading_text("Using the dashboard", size = "m", level = 2),
-          p(
-            "The dashboard is designed to be an interactive tool, updating
+          p("The dashboard is designed to be an interactive tool, updating
             charts and tables based on the inputs selected by the user to show
             breakdowns of interest. The dashboard has tabs to show HE
             participation rates relating to the ages, and tabs beneath each of
-            these for themes of interest:"
-          ),
+            these for themes of interest:"),
           tags$ul(
-            tags$li(
-              "Pupil characteristics – includes a chart and table showing
+            tags$li("Pupil characteristics – includes a chart and table showing
                     participation rate in HE by the age selected, broken down by
                     options selected by the user (tariff and characteristic
                     group such as FSM or sex). Allows comparisons between the
-                    individual characteristics within the group."
-            ),
-            tags$li(
-              "Pupil characteristics by region and local authority –
+                    individual characteristics within the group."),
+            tags$li("Pupil characteristics by region and local authority –
                     includes a map and table showing participation rate in HE
                     for the most recent cohort by the age selected, broken down
                     by user-selected options (tariff and FSM). Tabs allow switching
-                    between region and local authority breakdowns."
-            ),
-            tags$li(
-              "Level of study – includes a chart and table showing
+                    between region and local authority breakdowns."),
+            tags$li("Level of study – includes a chart and table showing
                     participation rate in HE by the age selected, broken down by
-                    level of study."
-            ),
-            tags$li(
-              "Qualification aim – includes a chart and table showing
+                    level of study."),
+            tags$li("Qualification aim – includes a chart and table showing
                     participation rate in HE by the age selected, broken down by
-                    qualification aim."
-            ),
-            tags$li(
-              "Mode of study – includes a chart and table showing
+                    qualification aim."),
+            tags$li("Mode of study – includes a chart and table showing
                     participation rate in HE by the age selected, broken down by
-                    mode of study."
-            )
+                    mode of study.")
           ),
-          p(
-            "Tables throughout the dashboard can be sorted by clicking on the
+          p("Tables throughout the dashboard can be sorted by clicking on the
             column headings. Hovering above charts will display labels, and you
             can zoom into sections of charts by clicking and dragging over an
             area of interest. It is also possible to focus on one or several
-            series presented in the chart by clicking the series in the legend."
-          ),
-          heading_text(
-            "Technical notes and guidance sources",
-            size = "m",
-            level = 2
-          ),
-          p(
-            "Please note, where no data is presented in charts or tables, this indicates that
+            series presented in the chart by clicking the series in the legend."),
+          heading_text("Technical notes and guidance sources", size = "m", level = 2),
+          p("Please note, where no data is presented in charts or tables, this indicates that
             there is no current record of HE participation in that category for
-            the cohort of 15-year-olds."
-          ),
+            the cohort of 15-year-olds."),
           p(
             "It is also worth noting that cohorts of 15-year-olds in the period
             2017/18 to 2019/20 who achieved A levels between 2020/21 and 2022/23

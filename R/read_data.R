@@ -13,69 +13,42 @@
 # datafiles_log.csv.
 # -----------------------------------------------------------------------------
 
+
 # Characteristics tabs  -------------------------------------------------------
 
 # Create function for overall chep_nongeog_output
 read_chep_nongeog <- function(databricks = FALSE, published = FALSE) {
   if (databricks) {
-    con <- dbConnect(
-      databricks(),
+    con <- dbConnect(databricks(),
       httpPath = Sys.getenv("DATABRICKS_SQL_WAREHOUSE_ID"),
       catalog = "catalog_40_copper_he_widening_participation",
       useNativeQuery = FALSE
     )
-    chep_nongeog_db_query <- paste0(
-      "SELECT * FROM catalog_40_copper_he_widening_participation.chep_wp.CHEP_2026_dash_input_nongeog"
-    )
+    chep_nongeog_db_query <- paste0("SELECT * FROM catalog_40_copper_he_widening_participation.chep_wp.CHEP_2026_dash_input_nongeog")
     chep_nongeog_output <- dbGetQuery(con, chep_nongeog_db_query)
-    chep_nongeog_output$time_period <- as.numeric(
-      chep_nongeog_output$time_period
-    )
+    chep_nongeog_output$time_period <- as.numeric(chep_nongeog_output$time_period)
+    chep_nongeog_output <- chep_nongeog_output %>% arrange(time_period, characteristic_group, characteristic)
     chep_nongeog_output <- chep_nongeog_output %>%
-      arrange(time_period, characteristic_group, characteristic)
-    chep_nongeog_output <- chep_nongeog_output %>%
-      mutate(
-        time_label = paste0(
-          substr(time_period, 1, 4),
-          "/",
-          substr(time_period, 5, 6)
-        )
-      )
+      mutate(time_label = paste0(substr(time_period, 1, 4), "/", substr(time_period, 5, 6)))
     chep_nongeog_output
   } else {
     if (published) {
       chep_nongeog_output <- read.csv("SQL/chep_2026_dash_input_nongeog.csv")
-      chep_nongeog_output$time_period <- as.numeric(
-        chep_nongeog_output$time_period
-      )
-      chep_nongeog_output <- chep_nongeog_output %>%
-        arrange(time_period, characteristic_group, characteristic)
+      chep_nongeog_output$time_period <- as.numeric(chep_nongeog_output$time_period)
+      chep_nongeog_output <- chep_nongeog_output %>% arrange(time_period, characteristic_group, characteristic)
       chep_nongeog_output <- chep_nongeog_output %>%
         mutate(
-          time_label = paste0(
-            substr(time_period, 1, 4),
-            "/",
-            substr(time_period, 5, 6)
-          ),
+          time_label = paste0(substr(time_period, 1, 4), "/", substr(time_period, 5, 6)),
           entry_rate = as.numeric(entry_rate)
         )
       chep_nongeog_output
     } else {
-      chep_nongeog_output <- read.csv(
-        "SQL/chep_2026_dash_input_nongeog_mock.csv"
-      )
-      chep_nongeog_output$time_period <- as.numeric(
-        chep_nongeog_output$time_period
-      )
-      chep_nongeog_output <- chep_nongeog_output %>%
-        arrange(time_period, characteristic_group, characteristic)
+      chep_nongeog_output <- read.csv("SQL/chep_2026_dash_input_nongeog_mock.csv")
+      chep_nongeog_output$time_period <- as.numeric(chep_nongeog_output$time_period)
+      chep_nongeog_output <- chep_nongeog_output %>% arrange(time_period, characteristic_group, characteristic)
       chep_nongeog_output <- chep_nongeog_output %>%
         mutate(
-          time_label = paste0(
-            substr(time_period, 1, 4),
-            "/",
-            substr(time_period, 5, 6)
-          ),
+          time_label = paste0(substr(time_period, 1, 4), "/", substr(time_period, 5, 6)),
           entry_rate = as.numeric(entry_rate)
         )
       chep_nongeog_output
@@ -94,10 +67,12 @@ create_characteristic_outputs <- function(chep_nongeog_output) {
 
   list(
     characteristic_output = chep_characteristic_output,
-    characteristic_output_19 = chep_characteristic_output %>%
-      filter(entry_age == "By Age 19"),
-    characteristic_output_25 = chep_characteristic_output %>%
-      filter(entry_age == "By Age 25")
+    characteristic_output_19 =
+      chep_characteristic_output %>%
+        filter(entry_age == "By Age 19"),
+    characteristic_output_25 =
+      chep_characteristic_output %>%
+        filter(entry_age == "By Age 25")
   )
 }
 
@@ -169,15 +144,12 @@ create_qaim_outputs <- function(chep_nongeog_output) {
 # Create function for overall chep_geog_output
 read_chep_geog <- function(databricks = FALSE, published = FALSE) {
   if (databricks) {
-    con <- dbConnect(
-      databricks(),
+    con <- dbConnect(databricks(),
       httpPath = Sys.getenv("DATABRICKS_SQL_WAREHOUSE_ID"),
       catalog = "catalog_40_copper_he_widening_participation",
       useNativeQuery = FALSE
     )
-    chep_geog_db_query <- paste0(
-      "SELECT * FROM catalog_40_copper_he_widening_participation.chep_wp.CHEP_2026_dash_input_geog"
-    )
+    chep_geog_db_query <- paste0("SELECT * FROM catalog_40_copper_he_widening_participation.chep_wp.CHEP_2026_dash_input_geog")
     chep_geog_output <- dbGetQuery(con, chep_geog_db_query)
     chep_geog_output$time_period <- as.numeric(chep_geog_output$time_period)
     chep_geog_output <- chep_geog_output %>%
@@ -186,13 +158,11 @@ read_chep_geog <- function(databricks = FALSE, published = FALSE) {
         new_la_code = gsub("\\s+", "", new_la_code), # RESOLVES ANY WHITESPACE ISSUES
         entry_rate = as.numeric(entry_rate)
       ) %>%
-      mutate(
-        characteristic = recode(
-          characteristic,
-          "All Other Pupils" = "Non-FSM",
-          "Free School Meals" = "FSM"
-        )
-      )
+      mutate(characteristic = recode(
+        characteristic,
+        "All Other Pupils" = "Non-FSM",
+        "Free School Meals" = "FSM"
+      ))
     chep_geog_output
   } else {
     if (published) {
@@ -204,13 +174,11 @@ read_chep_geog <- function(databricks = FALSE, published = FALSE) {
           new_la_code = gsub("\\s+", "", new_la_code), # RESOLVES ANY WHITESPACE ISSUES
           entry_rate = as.numeric(entry_rate)
         ) %>%
-        mutate(
-          characteristic = recode(
-            characteristic,
-            "All Other Pupils" = "Non-FSM",
-            "Free School Meals" = "FSM"
-          )
-        )
+        mutate(characteristic = recode(
+          characteristic,
+          "All Other Pupils" = "Non-FSM",
+          "Free School Meals" = "FSM"
+        ))
       chep_geog_output
     } else {
       chep_geog_output <- read.csv("SQL/chep_2026_dash_input_geog_mock.csv")
@@ -221,13 +189,11 @@ read_chep_geog <- function(databricks = FALSE, published = FALSE) {
           new_la_code = gsub("\\s+", "", new_la_code), # RESOLVES ANY WHITESPACE ISSUES
           entry_rate = as.numeric(entry_rate)
         ) %>%
-        mutate(
-          characteristic = recode(
-            characteristic,
-            "All Other Pupils" = "Non-FSM",
-            "Free School Meals" = "FSM"
-          )
-        )
+        mutate(characteristic = recode(
+          characteristic,
+          "All Other Pupils" = "Non-FSM",
+          "Free School Meals" = "FSM"
+        ))
       chep_geog_output
     }
   }
@@ -252,22 +218,13 @@ read_la_data <- function(file) {
 }
 
 # GEOJSON FILE RELATING TO 2019 from https://www.data.gov.uk/dataset/1563437b-8ae1-4a76-9f51-2ecd8cda7273/counties-and-unitary-authorities-april-2019-boundaries-ew-bgc1
-df_la_geo_2019 <- read_la_data(
-  file = "geogs/Apr_2019_Counties_Unitary_Authorities_EW_BGC.geojson"
-) %>%
-  clean_names()
+df_la_geo_2019 <- read_la_data(file = "geogs/Apr_2019_Counties_Unitary_Authorities_EW_BGC.geojson") %>% clean_names()
 
 # GEOJSON FILE RELATING TO 2011 from https://www.data.gov.uk/dataset/fe74170a-ddb2-435a-bfaf-017fd412b880/counties-and-unitary-authorities-december-2018-boundaries-ew-bgc1
-df_la_geo_2018 <- read_la_data(
-  file = "geogs/Dec_2018_Counties_Unitary_Authorities_EW_BGC.geojson"
-) %>%
-  clean_names()
+df_la_geo_2018 <- read_la_data(file = "geogs/Dec_2018_Counties_Unitary_Authorities_EW_BGC.geojson") %>% clean_names()
 
 # GEOJSON FILE RELATING TO 2011 from https://www.data.gov.uk/dataset/3f9d463b-31ea-4894-aa5d-082ea17cb14c/counties-and-unitary-authorities-december-2011-boundaries-ew-bgc1
-df_la_geo_2011 <- read_la_data(
-  file = "geogs/Dec_2011_Counties_Unitary_Authorities_EW_BGC.geojson"
-) %>%
-  clean_names()
+df_la_geo_2011 <- read_la_data(file = "geogs/Dec_2011_Counties_Unitary_Authorities_EW_BGC.geojson") %>% clean_names()
 
 # Region
 read_reg_data <- function(file) {
@@ -277,7 +234,4 @@ read_reg_data <- function(file) {
 }
 
 # GEOJSON FILE RELATING TO 2019 from https://www.data.gov.uk/dataset/ed9815d6-2a00-4c95-9c80-8abaaa145678/regions-december-2019-boundaries-en-bgc1
-df_reg_geo_2019 <- read_reg_data(
-  file = "geogs/Dec_2019_Regions_EN_BGC.geojson"
-) %>%
-  clean_names()
+df_reg_geo_2019 <- read_reg_data(file = "geogs/Dec_2019_Regions_EN_BGC.geojson") %>% clean_names()
