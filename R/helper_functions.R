@@ -10,11 +10,19 @@
 
 # Value box function ----------------------------------------------------------
 # fontsize: can be small, medium or large
-value_box <- function(value, subtitle, icon = NULL,
-                      color = "blue", width = 4,
-                      href = NULL, fontsize = "medium") {
+value_box <- function(
+  value,
+  subtitle,
+  icon = NULL,
+  color = "blue",
+  width = 4,
+  href = NULL,
+  fontsize = "medium"
+) {
   validate_color(color)
-  if (!is.null(icon)) tagAssert(icon, type = "i")
+  if (!is.null(icon)) {
+    tagAssert(icon, type = "i")
+  }
 
   box_content <- div(
     class = paste0("small-box bg-", color),
@@ -46,8 +54,11 @@ validate_color <- function(color) {
   }
 
   stop(
-    "Invalid color: ", color, ". Valid colors are: ",
-    paste(valid_colors, collapse = ", "), "."
+    "Invalid color: ",
+    color,
+    ". Valid colors are: ",
+    paste(valid_colors, collapse = ", "),
+    "."
   )
 }
 
@@ -58,7 +69,11 @@ validate_color <- function(color) {
 # Note the advice on trying to keep to a maximum of 4 series in a single plot
 # AF colours package guidance here: https://best-practice-and-impact.github.io/afcolours/
 suppressMessages(
-  gss_colour_pallette <- afcolours::af_colours("categorical", colour_format = "hex", n = 4)
+  gss_colour_pallette <- afcolours::af_colours(
+    "categorical",
+    colour_format = "hex",
+    n = 4
+  )
 )
 
 #' Create a Tabset Panel with Optional Tabs
@@ -72,21 +87,24 @@ create_output_tabs <- function(
   table_output = NULL,
   download_output = NULL
 ) {
-  tabs <- Filter(Negate(is.null), list(
-    if (!is.null(chart_output)) tabPanel("Chart", chart_output),
-    if (!is.null(table_output)) {
-      tabPanel(
-        "Table",
-        div(style = "margin-top: 20px;", table_output)
-      )
-    },
-    if (!is.null(download_output)) {
-      tabPanel(
-        "Download",
-        div(style = "margin-top: 40px;", download_output)
-      )
-    }
-  ))
+  tabs <- Filter(
+    Negate(is.null),
+    list(
+      if (!is.null(chart_output)) tabPanel("Chart", chart_output),
+      if (!is.null(table_output)) {
+        tabPanel(
+          "Table",
+          div(style = "margin-top: 20px;", table_output)
+        )
+      },
+      if (!is.null(download_output)) {
+        tabPanel(
+          "Download",
+          div(style = "margin-top: 40px;", download_output)
+        )
+      }
+    )
+  )
 
   do.call(tabsetPanel, c(list(id = paste0("main_tabs_", id)), tabs))
 }
@@ -118,7 +136,8 @@ in_line_nav_link <- function(link_text, target_link) {
 # Expandable dropdown function-------------------------------------------------
 expandable <- function(inputId, label, contents) {
   govDetails <- shiny::tags$details(
-    class = "govuk-details", id = inputId,
+    class = "govuk-details",
+    id = inputId,
     shiny::tags$summary(
       class = "govuk-details__summary",
       shiny::tags$span(
@@ -136,14 +155,25 @@ expandable <- function(inputId, label, contents) {
 
 # Function for characteristic titles ------------------------------------------
 # Reactive chart title - used for characteristic tab only
-characteristic_title <- function(output, output_name, char_group_react, tariff_react, age) {
+characteristic_title <- function(
+  output,
+  output_name,
+  char_group_react,
+  tariff_react,
+  age
+) {
   output[[output_name]] <- renderUI({
     char_group <- char_group_react()
     tariff_grp <- tariff_react()
 
     tariff_txt <- if (tariff_grp == "High tariff") " high tariff" else ""
 
-    status_groups <- c("Care Leavers", "Children in Need", "Disadvantage", "Looked After Children")
+    status_groups <- c(
+      "Care Leavers",
+      "Children in Need",
+      "Disadvantage",
+      "Looked After Children"
+    )
     eligibility_groups <- c("Free School Meals")
     quintile_groups <- c("POLAR")
     school_type_groups <- c("School Type")
@@ -160,7 +190,11 @@ characteristic_title <- function(output, output_name, char_group_react, tariff_r
       ""
     }
 
-    display_group <- if (char_group == "POLAR") char_group else tolower(char_group)
+    display_group <- if (char_group == "POLAR") {
+      char_group
+    } else {
+      tolower(char_group)
+    }
 
     breakdown_txt <- if (tolower(char_group) != "total") {
       paste0(" broken down by ", display_group, suffix)
@@ -170,8 +204,10 @@ characteristic_title <- function(output, output_name, char_group_react, tariff_r
 
     heading_text(
       paste0(
-        "Participation rates in", tariff_txt,
-        " higher education by age ", age,
+        "Participation rates in",
+        tariff_txt,
+        " higher education by age ",
+        age,
         breakdown_txt
       ),
       size = "m",
@@ -182,7 +218,12 @@ characteristic_title <- function(output, output_name, char_group_react, tariff_r
 
 # Function for characteristic charts ------------------------------------------
 # Line chart - used for tabs based on school census derived characteristics
-characteristic_plot <- function(reactive_input, output, output_name, colors_list) {
+characteristic_plot <- function(
+  reactive_input,
+  output,
+  output_name,
+  colors_list
+) {
   output[[output_name]] <- renderPlotly({
     df <- reactive_input()
 
@@ -215,8 +256,19 @@ characteristic_plot <- function(reactive_input, output, output_name, colors_list
       mode = "lines+markers"
     ) %>%
       layout(
-        xaxis = list(title = "Year aged 15", zeroline = TRUE, tickmode = "array", tickvals = ticks$time_period, ticktext = ticks$time_label, showspikes = FALSE),
-        yaxis = list(title = "Participation rate (%)", zeroline = TRUE, rangemode = "tozero"),
+        xaxis = list(
+          title = "Year aged 15",
+          zeroline = TRUE,
+          tickmode = "array",
+          tickvals = ticks$time_period,
+          ticktext = ticks$time_label,
+          showspikes = FALSE
+        ),
+        yaxis = list(
+          title = "Participation rate (%)",
+          zeroline = TRUE,
+          rangemode = "tozero"
+        ),
         legend = list(
           orientation = "h",
           x = 0.5,
@@ -236,7 +288,12 @@ characteristic_plot <- function(reactive_input, output, output_name, colors_list
 
 
 # Bar chart - used for tabs based on HESA derived characteristics
-characteristic_bars <- function(reactive_input, output, output_name, colors_list) {
+characteristic_bars <- function(
+  reactive_input,
+  output,
+  output_name,
+  colors_list
+) {
   output[[output_name]] <- renderPlotly({
     df <- reactive_input()
 
@@ -245,7 +302,9 @@ characteristic_bars <- function(reactive_input, output, output_name, colors_list
     ordered_levels <- sort(unique(df$characteristic))
 
     df <- df %>%
-      mutate(characteristic = factor(characteristic, levels = ordered_levels)) %>%
+      mutate(
+        characteristic = factor(characteristic, levels = ordered_levels)
+      ) %>%
       group_by(time_period)
 
     ticks <- df %>%
@@ -266,9 +325,26 @@ characteristic_bars <- function(reactive_input, output, output_name, colors_list
     ) %>%
       layout(
         barmode = "stack",
-        xaxis = list(title = "Year aged 15", zeroline = TRUE, tickmode = "array", tickvals = ticks$time_period, ticktext = ticks$time_label, showspikes = FALSE),
-        yaxis = list(title = "Participation rate (%)", zeroline = TRUE, rangemode = "tozero"),
-        legend = list(orientation = "h", x = 0.5, xanchor = "center", y = -0.3, traceorder = "normal"),
+        xaxis = list(
+          title = "Year aged 15",
+          zeroline = TRUE,
+          tickmode = "array",
+          tickvals = ticks$time_period,
+          ticktext = ticks$time_label,
+          showspikes = FALSE
+        ),
+        yaxis = list(
+          title = "Participation rate (%)",
+          zeroline = TRUE,
+          rangemode = "tozero"
+        ),
+        legend = list(
+          orientation = "h",
+          x = 0.5,
+          xanchor = "center",
+          y = -0.3,
+          traceorder = "normal"
+        ),
         margin = list(t = 80),
         font = t
       )
@@ -317,7 +393,8 @@ characteristic_table <- function(reactive_input, output, output_name) {
       columns = dynamic_cols,
       defaultColDef = colDef(
         headerClass = "wrap-header bar-sort-header",
-        style = JS("
+        style = JS(
+          "
           function(rowInfo, column, state) {
             let style = { textAlign: 'left' };
 
@@ -329,7 +406,8 @@ characteristic_table <- function(reactive_input, output, output_name) {
 
             return style;
           }
-        ")
+        "
+        )
       )
     )
   })
@@ -337,7 +415,13 @@ characteristic_table <- function(reactive_input, output, output_name) {
 
 # Function for geographic tab titles ------------------------------------------
 # Reactive chart title - used for geographic tab only
-geographic_title <- function(output, output_name, char_react, tariff_react, age) {
+geographic_title <- function(
+  output,
+  output_name,
+  char_react,
+  tariff_react,
+  age
+) {
   output[[output_name]] <- renderUI({
     char <- char_react()
     tariff_grp <- tariff_react()
@@ -361,8 +445,10 @@ geographic_title <- function(output, output_name, char_react, tariff_react, age)
 
     heading_text(
       paste0(
-        "Participation rates in", tariff_txt,
-        " higher education by age ", age,
+        "Participation rates in",
+        tariff_txt,
+        " higher education by age ",
+        age,
         breakdown_txt,
         " - ",
         cohort_yr,
@@ -412,7 +498,8 @@ region_table <- function(reactive_input, output, output_name) {
       ),
       defaultColDef = colDef(
         headerClass = "wrap-header bar-sort-header",
-        style = JS("
+        style = JS(
+          "
           function(rowInfo, column, state) {
             let style = { textAlign: 'left' };
 
@@ -424,7 +511,8 @@ region_table <- function(reactive_input, output, output_name) {
 
             return style;
           }
-        ")
+        "
+        )
       )
     )
   })
@@ -467,7 +555,8 @@ la_table <- function(reactive_input, output, output_name) {
       ),
       defaultColDef = colDef(
         headerClass = "wrap-header bar-sort-header",
-        style = JS("
+        style = JS(
+          "
           function(rowInfo, column, state) {
             let style = { textAlign: 'left' };
 
@@ -479,7 +568,8 @@ la_table <- function(reactive_input, output, output_name) {
 
             return style;
           }
-        ")
+        "
+        )
       )
     )
   })
@@ -495,7 +585,16 @@ ees_blues <- c(
   "#12436D"
 )
 
-regional_geographic_plot <- function(initial_input, input, characteristic_filter, tariff_filter, output, output_name, geo_json_file, reg_code_column) {
+regional_geographic_plot <- function(
+  initial_input,
+  input,
+  characteristic_filter,
+  tariff_filter,
+  output,
+  output_name,
+  geo_json_file,
+  reg_code_column
+) {
   reg_code_sym <- rlang::sym(reg_code_column)
 
   joined_mapdata <- geo_json_file %>%
@@ -532,7 +631,12 @@ regional_geographic_plot <- function(initial_input, input, characteristic_filter
   reg_reactive_map_pal <- reactive({
     quantile_num <- 5
     probs <- seq(0, 1, length.out = quantile_num + 1)
-    bins <- quantile(reg_reactive_map_dataset()$entry_rate, probs, na.rm = TRUE, names = FALSE)
+    bins <- quantile(
+      reg_reactive_map_dataset()$entry_rate,
+      probs,
+      na.rm = TRUE,
+      names = FALSE
+    )
     bins <- unique(bins)
 
     pal <- colorBin(ees_blues, bins = bins)
@@ -543,7 +647,12 @@ regional_geographic_plot <- function(initial_input, input, characteristic_filter
   reg_reactive_map_labels <- reactive({
     quantile_num <- 5
     probs <- seq(0, 1, length.out = quantile_num + 1)
-    bins <- quantile(reg_reactive_map_dataset()$entry_rate, probs, na.rm = TRUE, names = FALSE)
+    bins <- quantile(
+      reg_reactive_map_dataset()$entry_rate,
+      probs,
+      na.rm = TRUE,
+      names = FALSE
+    )
     bins <- unique(bins)
 
     pal <- colorBin(ees_blues, bins = bins)
@@ -591,7 +700,6 @@ regional_geographic_plot <- function(initial_input, input, characteristic_filter
       )
   })
 
-
   # Map rendering
   output[[output_name]] <- renderLeaflet({
     reg_reactive_map_to_display()
@@ -600,7 +708,16 @@ regional_geographic_plot <- function(initial_input, input, characteristic_filter
 
 # Function for geographic local authority leaflet maps ------------------------
 # Used for tabs based on LA (IF USING OLD GEOJSON FILE)
-la_geographic_plot <- function(initial_input, input, characteristic_filter, tariff_filter, output, output_name, geo_json_file, la_code_column) {
+la_geographic_plot <- function(
+  initial_input,
+  input,
+  characteristic_filter,
+  tariff_filter,
+  output,
+  output_name,
+  geo_json_file,
+  la_code_column
+) {
   la_code_sym <- rlang::sym(la_code_column)
 
   joined_mapdata <- geo_json_file %>%
@@ -637,7 +754,12 @@ la_geographic_plot <- function(initial_input, input, characteristic_filter, tari
   la_reactive_map_pal <- reactive({
     quantile_num <- 5
     probs <- seq(0, 1, length.out = quantile_num + 1)
-    bins <- quantile(la_reactive_map_dataset()$entry_rate, probs, na.rm = TRUE, names = FALSE)
+    bins <- quantile(
+      la_reactive_map_dataset()$entry_rate,
+      probs,
+      na.rm = TRUE,
+      names = FALSE
+    )
     bins <- unique(bins)
 
     pal <- colorBin(ees_blues, bins = bins)
@@ -648,7 +770,12 @@ la_geographic_plot <- function(initial_input, input, characteristic_filter, tari
   la_reactive_map_labels <- reactive({
     quantile_num <- 5
     probs <- seq(0, 1, length.out = quantile_num + 1)
-    bins <- quantile(la_reactive_map_dataset()$entry_rate, probs, na.rm = TRUE, names = FALSE)
+    bins <- quantile(
+      la_reactive_map_dataset()$entry_rate,
+      probs,
+      na.rm = TRUE,
+      names = FALSE
+    )
     bins <- unique(bins)
 
     pal <- colorBin(ees_blues, bins = bins)
@@ -695,7 +822,6 @@ la_geographic_plot <- function(initial_input, input, characteristic_filter, tari
         opacity = 1
       )
   })
-
 
   # Map rendering
   output[[output_name]] <- renderLeaflet({
