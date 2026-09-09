@@ -6200,7 +6200,7 @@
       "checksum": "7fec9834ee9927cf76307a613d0e699e"
     },
     ".github/workflows/deploy-shiny.yaml": {
-      "checksum": "c4d6c81e26e864c08e0cecf42124487d"
+      "checksum": "9b59e3d66d343291b0f9bb4a549d1ad2"
     },
     ".github/workflows/lintr.yml": {
       "checksum": "1dfc7a1fd8514c8e667b10797a8b6a42"
@@ -6214,20 +6214,14 @@
     ".Rbuildignore": {
       "checksum": "b05bb200ea0c57599b74b0f9c0dd1ab8"
     },
-    ".Renviron": {
-      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
-    },
     ".Rprofile": {
-      "checksum": "26d5c1d97cd00da4255109c274263d3d"
+      "checksum": "d25f4d1ef50fc6371c54e7f8aeea12f1"
     },
     "datafiles_log.csv": {
       "checksum": "0be432176b0605da3a2067bcf3c8db15"
     },
     "deploy-parameters.yaml": {
       "checksum": "e1936ce5d26cd820a90a3ca5aa6b0bb6"
-    },
-    "DESCRIPTION": {
-      "checksum": "12ec8a8981de38a0c0e149b9e67ae51c"
     },
     "geogs/Apr_2019_Counties_Unitary_Authorities_EW_BGC.geojson": {
       "checksum": "65ee16c5bf49dd9af18be0767928fabe"
@@ -6242,7 +6236,7 @@
       "checksum": "43e73f746325ad51affd28229d7aeda4"
     },
     "global.R": {
-      "checksum": "8b8e12ca47fd7e775b1f12a061026ee2"
+      "checksum": "3b83e644018e17c4d00c51a2affc2999"
     },
     "google-analytics.html": {
       "checksum": "df02fdf1a3842b35f1eab63351b960ff"
@@ -6251,7 +6245,7 @@
       "checksum": "4ff1ab40947c9cebe66adef6c76f9ba7"
     },
     "R/helper_functions.R": {
-      "checksum": "49c8f0dc5557d8a0952f856390f5275f"
+      "checksum": "0a1a8e39074e2968d0e418c71f3ca49d"
     },
     "R/read_data.R": {
       "checksum": "922984b698a5ce48061d5d0679441b1b"
@@ -6293,79 +6287,79 @@
       "checksum": "12e9b09de5275bdc13bde6ae5a82f8b1"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_01_navigation_bar-001.png": {
-      "checksum": "b38d4770aeab11604eec2525eca7658f"
+      "checksum": "3d43a56255a4cc1c6a24983adbed3cfe"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_01_navigation_bar-002.png": {
-      "checksum": "e419e75e700fcf8e3ad50cf60dbed41b"
+      "checksum": "d81abf63d68228f816ee40f4c289ed4e"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_01_navigation_bar-003.png": {
-      "checksum": "97112fb59e5cce9f6f930bc10802a75e"
+      "checksum": "09f43bec981c7c75557fa97f9ce96c09"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_01_navigation_bar-004.png": {
-      "checksum": "8a2ac81fb1d356620379f86fc8bbfd66"
+      "checksum": "09f43bec981c7c75557fa97f9ce96c09"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_01_navigation_bar-005.png": {
-      "checksum": "6f6fa54e136a24aaa16b671bb4507f68"
+      "checksum": "bccbdad747bd9311da10f00588119367"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_01_navigation_bar-006.png": {
-      "checksum": "eb64671a37f67c511e0a10a79ca4566b"
+      "checksum": "c739d0cb015c65d260758c9a22b61e72"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_01_navigation_bar-007.png": {
-      "checksum": "151cef5809da62090053060252db68e6"
+      "checksum": "7c870ae33c4fce0cf37b6c5d9d2f4a72"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-001.png": {
-      "checksum": "b38d4770aeab11604eec2525eca7658f"
+      "checksum": "3d43a56255a4cc1c6a24983adbed3cfe"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-002.png": {
-      "checksum": "6c0a2546768c8f44f44a31794fdf8a23"
+      "checksum": "fa758ed623d3976d0b80a60e9b0aedd0"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-003.png": {
-      "checksum": "2d9b590d5342314bf66d37f536035e11"
+      "checksum": "9282cf38ebbbf0ce1549a9270c690cb8"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-004.png": {
-      "checksum": "3ac851754612b70ff6d96fa26f6cb704"
+      "checksum": "1cfc5d367d097f2524ed6d47526f62ef"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-005.png": {
-      "checksum": "dbf499ff05434d644bf10a11ac5d4c1d"
+      "checksum": "40f4ecb0a77b56127c7124d54dfe7747"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-006.png": {
-      "checksum": "5639c34dbaa94b80e1ff5f421009c55e"
+      "checksum": "99576ae9022ce8e103b75758ba2b0c8b"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-007.png": {
-      "checksum": "90f5815ebe8bbca6f68a1e24de27071f"
+      "checksum": "986f293fcccc9c6a3304e62e6484e9c3"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-008.png": {
-      "checksum": "97112fb59e5cce9f6f930bc10802a75e"
+      "checksum": "09f43bec981c7c75557fa97f9ce96c09"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-009.png": {
-      "checksum": "8f63c3159c21430d431aff05225e210f"
+      "checksum": "c52494bc3ea849a9a04520a0c4e63b45"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-010.png": {
-      "checksum": "0c7b7079154b8522981489573ea5c241"
+      "checksum": "40c326be4d83d8ea4220d15d29ca745e"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-011.png": {
-      "checksum": "4362ef194a81806b88a2df941169849e"
+      "checksum": "faa7e5e0ae3fbad66b47cf5fde856175"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-012.png": {
-      "checksum": "f9d4b0c36df3dd79f1502e2d49e00504"
+      "checksum": "fa289ff26393fcc5d04656e2baf42bdf"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_02_navigation_tabs-013.png": {
-      "checksum": "06705f5b0877d2aa8537f9a3bc05466a"
+      "checksum": "206b00ed17ab38a5293c75e84a397328"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_03_navigation_dropdowns-001.png": {
-      "checksum": "b38d4770aeab11604eec2525eca7658f"
+      "checksum": "3d43a56255a4cc1c6a24983adbed3cfe"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_03_navigation_dropdowns-002.png": {
-      "checksum": "6c0a2546768c8f44f44a31794fdf8a23"
+      "checksum": "d81abf63d68228f816ee40f4c289ed4e"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_03_navigation_dropdowns-003.png": {
-      "checksum": "562576469006eb3db5fe9d6139e4dd75"
+      "checksum": "83fadd30922e8acbcb25972bc4926403"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_03_navigation_dropdowns-004.png": {
-      "checksum": "2d9b590d5342314bf66d37f536035e11"
+      "checksum": "c4141cfc49e6467552568d66ee89fdd8"
     },
     "tests/testthat/_snaps/windows-4.5/shinytest2/test_03_navigation_dropdowns-005.png": {
-      "checksum": "955beb6dfaa7ca8ce4563e78a28ee040"
+      "checksum": "2d7516c2360e6d8cd32956ea7be0ac72"
     },
     "tests/testthat/setup-shinytest2.R": {
       "checksum": "1398215e8776c9fce232979aae000d7a"
