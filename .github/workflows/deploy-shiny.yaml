@@ -11,7 +11,7 @@ on:
   
 jobs:
   deploy:
-    uses: dfe-analytical-services/dfeshiny/.github/workflows/dashboard_deploy_template.yaml@main
+    uses: dfe-analytical-services/dfeshiny/.github/workflows/dashboard_deploy_template.yaml@newfeature/deploy-add-api-key
     with:
       parameter_file: deploy-parameters.yaml
     secrets:
